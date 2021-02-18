@@ -1,0 +1,111 @@
+/* common */
+*{
+    font-family:'NotoSansKR';
+    font-size:13px;
+}
+
+body{
+    background-color:#eee;
+}
+header, .container, footer{
+    background-color:#fff;
+    padding:0 20px;
+    margin:0;
+}
+header{
+}
+footer{
+    border-top:10px solid #e5e5e5;
+}
+
+/* button */
+.btn{
+    text-align:center;
+    font-size:15px;
+    color:#fff;
+    padding:13px 0;
+    border-radius:10px;
+}
+    /* button size */
+    .btn.small{}
+    .btn.mid{}
+    .btn.large{}
+
+    /* button color */
+    .btn.pink{
+        background-color:#ff5550;
+    }
+/* //button */
+
+/* input */
+.ipt-comn{
+    font-size:12px;
+    padding:13px 15px;
+    border:1px solid #e5e5e5;
+    color:#959595;
+}
+.ipt-chk{
+}
+.ipt-chk-txt{
+    color:#000;
+    font-size:13px;
+}
+/* //input */
+
+/* area */
+.logo-area{
+    padding:24px 0 20px;
+    text-align:center;
+    margin:0 auto;
+}
+    .logo{
+        width:170px;
+        height:42px;
+        background:url(./images/common/logo.png) no-repeat center;
+        font-size:0;
+    }
+/* //logo-area */
+
+.ipt-area{
+    display:flex;
+    flex-flow:column;
+    background-color:#fff;
+    padding:10px 0;
+}
+    .ipt-area .ipt-comn{
+        margin-bottom:10px;
+    }
+/* //ipt-area */
+
+.btn-area{
+}
+    .btn-area .btn-box{
+        display:flex;
+        flex-flow:column;
+    }
+/* //btn-area */
+
+.cscenter-area{
+}
+/* //cscenter-area */
+
+.num-area{
+    padding-left:62px;
+}
+    .num-area .num{
+        display:block;
+        font-size:25px;
+        font-weight:900;
+        line-height:1.14;
+        letter-spacing:1px;
+        color:#0d0d0d;
+        margin-bottom:7px;
+    }
+
+    .num-area .num-desc{
+        font-size:10px;
+        color:#313131;
+    }
+/* //num-area */
+
+/* //common */
