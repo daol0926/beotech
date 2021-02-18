@@ -7,13 +7,22 @@
 body{
     background-color:#eee;
 }
+
+a{
+    text-decoration: none;
+}
+
 header, .container, footer{
     background-color:#fff;
     padding:0 20px;
-    margin:0;
+    margin:0 auto;
+    max-width:768px;
+    box-sizing: border-box;
 }
+
 header{
 }
+
 footer{
     border-top:10px solid #e5e5e5;
 }
@@ -26,6 +35,13 @@ footer{
     padding:13px 0;
     border-radius:10px;
 }
+
+    .btn:hover,
+    .btn:active,
+    .btn:focus{
+        color:#fff;
+    }
+
     /* button size */
     .btn.small{}
     .btn.mid{}
@@ -54,14 +70,15 @@ footer{
 
 /* area */
 .logo-area{
-    padding:24px 0 20px;
+    padding:48px 0 40px;
     text-align:center;
     margin:0 auto;
 }
     .logo{
         width:170px;
         height:42px;
-        background:url(./images/common/logo.png) no-repeat center;
+        margin:0 auto;
+        background:url(../images/common/logo.png) no-repeat center;
         font-size:0;
     }
 /* //logo-area */
