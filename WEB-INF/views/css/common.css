@@ -6,6 +6,11 @@
 
 body{
     background-color:#eee;
+    padding-bottom:115px;
+}
+
+dl,ol,ul{
+    margin-bottom:0;
 }
 
 a{
@@ -14,7 +19,7 @@ a{
 
 header, .container, footer{
     background-color:#fff;
-    padding:0 20px;
+    padding:0;
     margin:0 auto;
     max-width:768px;
     box-sizing: border-box;
@@ -23,8 +28,13 @@ header, .container, footer{
 header{
 }
 
+.container{
+    padding:0 20px;
+}
+
 footer{
-    border-top:10px solid #e5e5e5;
+    margin-top:10px;
+    padding-bottom:27px;
 }
 
 /* button */
@@ -42,14 +52,28 @@ footer{
         color:#fff;
     }
 
-    /* button size */
-    .btn.small{}
-    .btn.mid{}
-    .btn.large{}
-
     /* button color */
     .btn.pink{
         background-color:#ff5550;
+    }
+    .btn.white{
+        border:1px solid #707070;
+        color:#707070;
+        border-radius:0;
+    }
+    .btn.txt{
+        color:#000;
+        padding:0;
+    }
+
+    /* button size */
+    .btn.small{
+        font-size:13px;
+        padding:4px 28px;
+    }
+    .btn.mid{
+    }
+    .btn.large{
     }
 /* //button */
 
@@ -62,10 +86,11 @@ footer{
 }
 .ipt-chk{
 }
-.ipt-chk-txt{
-    color:#000;
-    font-size:13px;
-}
+    .ipt-chk-txt{
+        color:#000;
+        font-size:13px;
+        margin-left:7px;
+    }
 /* //input */
 
 /* area */
@@ -94,23 +119,58 @@ footer{
     }
 /* //ipt-area */
 
+.chk-area{
+    display:flex;
+    align-items:center;
+    margin-bottom:10px;
+}
+/* //chk-area */
+
 .btn-area{
 }
     .btn-area .btn-box{
         display:flex;
         flex-flow:column;
+        margin-bottom:18px;
+    }
+
+    .btn-area .desc-btn-box{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        padding-bottom:37px;
+    }
+
+    .btn-area .desc-btn-box .btn.txt:before{
+        content:'';
+        display:inline-block;
+        width:1px;
+        height:10px;
+        background:#b5b5b5;
+        margin-left:-30px;
+        margin-right:30px;
+    }
+
+    .btn-area .desc-btn-box .btn.txt:first-child:before{
+        display:none;
     }
 /* //btn-area */
 
 .cscenter-area{
+    border-bottom:10px solid #eee;
+    padding:17px 0;
+    display:flex;
+    justify-content:center;
 }
 /* //cscenter-area */
 
 .num-area{
     padding-left:62px;
+    margin:0 auto;
 }
     .num-area .num{
         display:block;
+        font-family:'Lato';
         font-size:25px;
         font-weight:900;
         line-height:1.14;
@@ -124,5 +184,53 @@ footer{
         color:#313131;
     }
 /* //num-area */
+
+.use-guide-area{
+    border-bottom:1px solid #e5e5e5;
+}
+    .use-guide-area dl{
+        display: flex;
+        justify-content: center;
+    }
+    .use-guide-area dl dd{
+        padding:14px 0;
+        width:50%;
+        margin-bottom:0;
+        text-align:center;
+    }
+    .use-guide-area .btn.txt{
+        color:#707070;
+    }
+/* //use-guide-area */
+
+.company-area{
+    padding:17px 20px;
+}
+/* //company-area */
+
+.company-info-area{
+}
+    .company-info-area dl dt{
+        font-size:19px;
+        color:#959595;
+        font-weight:600;
+        margin-bottom:10px;
+    }
+
+    .company-info-area dl dd{
+        color:#707070;
+        font-size:12px;
+        margin-bottom:2px;
+    }
+
+    .company-info-area dl dd:last-child{
+        margin-top:12px;
+    }
+
+.copyright{
+    margin-top:15px;
+    color:#707070;
+    font-size:12px;
+}
 
 /* //common */
