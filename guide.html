@@ -3,14 +3,8 @@
     <head>
         <meta charset="utf-8">
         <title>GUIDE</title>
-    </head>
-    <body>
-        <script>
-            // 새 창 열기
-            function blink_page(url) {
-                newPage=window.open(url);
-            }
-        </script>
+
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
         <style>
             body{
                 padding:1%;
@@ -19,7 +13,7 @@
             }
             body *{
                 font-size:11px;
-                font-family:Arial, Helvetica, sans-serif;
+                font-family: 'Noto Sans KR', sans-serif;
                 border:0;
                 margin:0;
                 padding:0;
@@ -88,13 +82,13 @@
                     font-weight:600;
                 }
                     .edit::after,
-                    .finish::after{
+                    .end::after{
                         padding:5px;
                     }
                     .edit::after{
                         content:'작업중';
                     }
-                    .finish::after{
+                    .end::after{
                         content:'작업완료';
                     }
                     .do::after{
@@ -106,17 +100,14 @@
                     }
                 .design{
                 }
-                    .design.finish::after{
+                    .design.end::after{
                         color:red;
                     }
                 .menubar{
-
                 }
                 .menu-header{
-
                 }
                 .menu-footer{
-
                 }
                 .status{
                 }
@@ -124,7 +115,7 @@
                         background-color:green;
                         color:#fff;
                     }
-                    .status.finish::after{
+                    .status.end::after{
                         background-color:red;
                         color:#fff;
                     }
@@ -134,6 +125,8 @@
                     margin-top:-54px;
                 }
         </style>
+    </head>
+    <body>
         <header>
             <div class="tit-area">
                 <h1>guide</h1>
@@ -141,7 +134,7 @@
                     <ul>
                         <li>file name은 html,css,js 공통적용<br />(ex: file name = login.html인 경우 login.js, login.css)</li>
                         <li>1depth 기준 공통 css,js는 1depth name.css / 1depth name.js</li>
-                        <li>file href 링크 클릭 시 페이지 이동</li>
+                        <li>file href 링크 클릭 시 페이지 이동 / 아이콘 등은 일괄적으로 공통영역 추출해 클래스 네이밍 후 추가</li>
                     </ul>
                 </div>
             </div>
@@ -175,7 +168,7 @@
                     </tr>
                 </thead>
             </table>
-            <table>
+            <table style="margin-top:-10px;">
                 <colgroup>
                     <col width="5%">
                     <col width="15%">
@@ -193,84 +186,84 @@
                         <th scope="row">1</th>
                         <td>LOGIN<br />(/WEB-INF/views/login/)</td>
                         <td>로그인</td>
-                        <td class="design finish"></td>
+                        <td class="design end"></td>
                         <td class="menubar not"></td>
                         <td class="menu-header not"></td>
                         <td class="menu-footer not"></td>
                         <td class="link"><button onclick="blink_page('./WEB-INF/views/login/login.html')">login</button></td>
-                        <td class="status finish"></td>
-                        <td>고객센터 부분 아이콘 추가만</td>
+                        <td class="status end"></td>
+                        <td></td>
                     </tr>
                     <tr>
                         <th scope="row">14</th>
                         <td></td>
                         <td>아이디/비밀번호찾기</td>
-                        <td class="design finish"></td>
+                        <td class="design end"></td>
                         <td class="menubar not"></td>
                         <td class="menu-header not"></td>
                         <td class="menu-footer not"></td>
                         <td class="link"><button onclick="blink_page('./WEB-INF/views/login/find.html')">find</button></td>
-                        <td></td>
+                        <td class=""></td>
                         <td></td>
                     </tr>
                     <tr>
                         <th scope="row">9</th>
                         <td>JOIN<br />(/WEB-INF/views/)</td>
                         <td>약관동의</td>
-                        <td class="design finish"></td>
+                        <td class="design end"></td>
                         <td class="menubar not"></td>
                         <td class="menu-header not"></td>
                         <td class="menu-footer not"></td>
                         <td class="link"><button onclick="blink_page('./WEB-INF/views/join/join.html')">join</button></td>
-                        <td></td>
+                        <td class=""></td>
                         <td></td>
                     </tr>
                     <tr>
                         <th scope="row">10</th>
                         <td></td>
                         <td>회원가입정보입력</td>
-                        <td class="design finish"></td>
+                        <td class="design end"></td>
                         <td class="menubar not"></td>
                         <td class="menu-header not"></td>
                         <td class="menu-footer not"></td>
                         <td class="link"><button onclick="blink_page('./WEB-INF/views/join/join_info.html')">join_info</button></td>
-                        <td></td>
+                        <td class=""></td>
                         <td></td>
                     </tr>
                     <tr>
                         <th scope="row">11</th>
                         <td></td>
                         <td>회원가입완료</td>
-                        <td class="design finish"></td>
+                        <td class="design end"></td>
                         <td class="menubar not"></td>
                         <td class="menu-header not"></td>
                         <td class="menu-footer not"></td>
                         <td class="link"><button onclick="blink_page('./WEB-INF/views/join/join_complete.html')">join_complete</button></td>
-                        <td></td>
+                        <td class=""></td>
                         <td></td>
                     </tr>
                     <tr>
                         <th scope="row">12</th>
                         <td></td>
                         <td>개인정보취급방침</td>
-                        <td class="design finish"></td>
+                        <td class="design end"></td>
                         <td class="menubar not"></td>
                         <td class="menu-header not"></td>
                         <td class="menu-footer not"></td>
                         <td class="link"><button onclick="blink_page('./WEB-INF/views/join/privacy_guide.html')">privacy_guide</button></td>
-                        <td></td>
+                        <td class=""></td>
                         <td></td>
                     </tr>
                     <tr>
                         <th scope="row">13</th>
                         <td></td>
                         <td>이용약관</td>
-                        <td class="design finish"></td>
+                        <td class="design end"></td>
                         <td class="menubar not"></td>
                         <td class="menu-header not"></td>
                         <td class="menu-footer not"></td>
                         <td class="link"><button onclick="blink_page('./WEB-INF/views/join/using_guide.html')">using_guide</button></td>
-                        <td></td>
+                        <td class=""></td>
                         <td></td>
                     </tr>
                     
@@ -278,7 +271,7 @@
                         <th scope="row">2</th>
                         <td>공통<br />(/WEB-INF/views/home/)</td>
                         <td>메뉴바</td>
-                        <td class="design finish"></td>
+                        <td class="design end"></td>
                         <td class="menubar"></td>
                         <td class="menu-header"></td>
                         <td class="menu-footer"></td>
@@ -290,7 +283,7 @@
                         <th scope="row">2</th>
                         <td></td>
                         <td>Header</td>
-                        <td class="design finish"></td>
+                        <td class="design end"></td>
                         <td class="menubar"></td>
                         <td class="menu-header"></td>
                         <td class="menu-footer"></td>
@@ -302,19 +295,19 @@
                         <th scope="row">2</th>
                         <td></td>
                         <td>footer</td>
-                        <td class="design finish"></td>
+                        <td class="design end"></td>
                         <td class="menubar"></td>
                         <td class="menu-header"></td>
                         <td class="menu-footer"></td>
                         <td class="link"><button onclick="blink_page('./WEB-INF/views/home/footer.html')">footer</button></td>
-                        <td class="status edit"></td>
+                        <td class="status end"></td>
                         <td></td>
                     </tr>
                     <tr>
                         <th scope="row">2</th>
                         <td></td>
                         <td>메인</td>
-                        <td class="design finish"></td>
+                        <td class="design end"></td>
                         <td class="menubar do"></td>
                         <td class="menu-header do"></td>
                         <td class="menu-footer do"></td>
@@ -326,96 +319,132 @@
                         <th scope="row">3</th>
                         <td>상품<br />(/WEB-INF/views/product/)</td>
                         <td>제품검색</td>
-                        <td class="design finish"></td>
+                        <td class="design end"></td>
                         <td class="menubar do"></td>
                         <td class="menu-header do"></td>
                         <td class="menu-footer do"></td>
                         <td class="link"><button onclick="blink_page('./WEB-INF/views/product/search.html')">search</button></td>
+                        <td class="status edit"></td>
                         <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td></td>
+                        <td>제품검색 &gt; 검색어 입력 레이어팝업</td>
+                        <td class="design end"></td>
+                        <td class="menubar do"></td>
+                        <td class="menu-header do"></td>
+                        <td class="menu-footer do"></td>
+                        <td class="link"><button onclick="blink_page('./WEB-INF/views/product/search.html')">search</button></td>
+                        <td class=""></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td></td>
+                        <td>제품검색 &gt; 검색결과</td>
+                        <td class="design end"></td>
+                        <td class="menubar do"></td>
+                        <td class="menu-header do"></td>
+                        <td class="menu-footer do"></td>
+                        <td class="link"><button onclick="blink_page('./WEB-INF/views/product/search_result.html')">search_result</button></td>
+                        <td class=""></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td></td>
+                        <td>제품검색 &gt; 장바구니 추가 레이어팝업</td>
+                        <td class="design end"></td>
+                        <td class="menubar do"></td>
+                        <td class="menu-header do"></td>
+                        <td class="menu-footer do"></td>
+                        <td class="link"><button onclick="blink_page('./WEB-INF/views/product/search_cart_add_pop.html')">search_cart_add_pop</button></td>
+                        <td class=""></td>
                         <td></td>
                     </tr>
                     <tr>
                         <th scope="row">4</th>
                         <td></td>
                         <td>베스트상품</td>
-                        <td class="design finish"></td>
+                        <td class="design end"></td>
                         <td class="menubar do"></td>
                         <td class="menu-header do"></td>
                         <td class="menu-footer do"></td>
                         <td class="link"><button onclick="blink_page('./WEB-INF/views/product/best.html')">best</button></td>
-                        <td></td>
+                        <td class=""></td>
                         <td></td>
                     </tr>
                     <tr>
                         <th scope="row">5</th>
                         <td></td>
                         <td>추천상품</td>
-                        <td class="design finish"></td>
+                        <td class="design end"></td>
                         <td class="menubar do"></td>
                         <td class="menu-header do"></td>
                         <td class="menu-footer do"></td>
                         <td class="link"><button onclick="blink_page('./WEB-INF/views/product/recommend.html')">recommend</button></td>
-                        <td></td>
+                        <td class=""></td>
                         <td></td>
                     </tr>
                     <tr>
                         <th scope="row">6</th>
                         <td></td>
                         <td>최근 본 상품</td>
-                        <td class="design finish"></td>
+                        <td class="design end"></td>
                         <td class="menubar do"></td>
                         <td class="menu-header do"></td>
                         <td class="menu-footer do"></td>
                         <td class="link"><button onclick="blink_page('./WEB-INF/views/product/recent.html')">recent</button></td>
-                        <td></td>
+                        <td class=""></td>
                         <td></td>
                     </tr>
                     <tr>
                         <th scope="row">7</th>
                         <td></td>
                         <td>최근 주문 상품</td>
-                        <td class="design finish"></td>
+                        <td class="design end"></td>
                         <td class="menubar do"></td>
                         <td class="menu-header do"></td>
                         <td class="menu-footer do"></td>
                         <td class="link"><button onclick="blink_page('./WEB-INF/views/product/recent_order.html')">recent_order</button></td>
-                        <td></td>
+                        <td class=""></td>
                         <td></td>
                     </tr>
                     <tr>
                         <th scope="row">8</th>
                         <td></td>
                         <td>제품상세</td>
-                        <td class="design finish"></td>
+                        <td class="design end"></td>
                         <td class="menubar do"></td>
                         <td class="menu-header not"></td>
                         <td class="menu-footer do"></td>
                         <td class="link"><button onclick="blink_page('./WEB-INF/views/product/detail.html')">detail</button></td>
-                        <td></td>
+                        <td class=""></td>
                         <td></td>
                     </tr>
                     <tr>
                         <th scope="row">9</th>
                         <td>주문/결제<br />(/WEB-INF/views/order/)</td>
                         <td>장바구니</td>
-                        <td class="design finish"></td>
+                        <td class="design end"></td>
                         <td class="menubar do"></td>
                         <td class="menu-header not"></td>
                         <td class="menu-footer do"></td>
                         <td class="link"><button onclick="blink_page('./WEB-INF/views/order/cart.html')">cart</button></td>
-                        <td></td>
+                        <td class=""></td>
                         <td></td>
                     </tr>
                     <tr>
                         <th scope="row">10</th>
                         <td></td>
                         <td>주문/결제</td>
-                        <td class="design finish"></td>
+                        <td class="design end"></td>
                         <td class="menubar do"></td>
                         <td class="menu-header not"></td>
                         <td class="menu-footer do"></td>
                         <td class="link"><button onclick="blink_page('./WEB-INF/views/order/order.html')">order</button></td>
-                        <td></td>
+                        <td class=""></td>
                         <td></td>
                     </tr>
                     <tr>
@@ -427,7 +456,7 @@
                         <td class="menu-header not"></td>
                         <td class="menu-footer do"></td>
                         <td class="link not"></td>
-                        <td></td>
+                        <td class=""></td>
                         <td></td>
                     </tr>
                     <tr>
@@ -439,7 +468,7 @@
                         <td class="menu-header not"></td>
                         <td class="menu-footer not"></td>
                         <td class="link not"></td>
-                        <td></td>
+                        <td class=""></td>
                         <td></td>
                     </tr>
                     <tr>
@@ -451,67 +480,67 @@
                         <td class="menu-header not"></td>
                         <td class="menu-footer not"></td>
                         <td class="link not"></button></td>
-                        <td></td>
+                        <td class=""></td>
                         <td></td>
                     </tr>
                     <tr>
                         <th scope="row">11</th>
                         <td></td>
                         <td>주문완료</td>
-                        <td class="design finish"></td>
+                        <td class="design end"></td>
                         <td class="menubar do"></td>
                         <td class="menu-header do"></td>
                         <td class="menu-footer do"></td>
                         <td class="link"><button onclick="blink_page('./WEB-INF/views/order/order_complete.html')">order_complete</button></td>
-                        <td></td>
+                        <td class=""></td>
                         <td></td>
                     </tr>
                     <tr>
                         <th scope="row">12</th>
                         <td></td>
                         <td>주문취소완료</td>
-                        <td class="design finish"></td>
+                        <td class="design end"></td>
                         <td class="menubar do"></td>
                         <td class="menu-header do"></td>
                         <td class="menu-footer do"></td>
                         <td class="link"><button onclick="blink_page('./WEB-INF/views/order/order_cancel_complete.html')">order_cancel_complete</button></td>
-                        <td></td>
+                        <td class=""></td>
                         <td></td>
                     </tr>
                     <tr>
                         <th scope="row">13</th>
                         <td>MY INFO<br />(WEB-INF/views/myinfo)</td>
                         <td>비밀번호 변경</td>
-                        <td class="design finish"></td>
+                        <td class="design end"></td>
                         <td class="menubar do"></td>
                         <td class="menu-header not"></td>
                         <td class="menu-footer do"></td>
                         <td class="link"><button onclick="blink_page('./WEB-INF/views/myinfo/pw_modify.html')">pw_modify</button></td>
-                        <td></td>
+                        <td class=""></td>
                         <td></td>
                     </tr>
                     <tr>
                         <th scope="row">14</th>
                         <td></td>
                         <td>회원탈퇴</td>
-                        <td class="design finish"></td>
+                        <td class="design end"></td>
                         <td class="menubar do"></td>
                         <td class="menu-header not"></td>
                         <td class="menu-footer do"></td>
                         <td class="link"><button onclick="blink_page('./WEB-INF/views/myinfo/member_out.html')">member_out</button></td>
-                        <td></td>
+                        <td class=""></td>
                         <td></td>
                     </tr>
                     <tr>
                         <th scope="row">15</th>
                         <td></td>
                         <td>회원탈퇴완료</td>
-                        <td class="design finish"></td>
+                        <td class="design end"></td>
                         <td class="menubar do"></td>
                         <td class="menu-header not"></td>
                         <td class="menu-footer do"></td>
                         <td class="link"><button onclick="blink_page('./WEB-INF/views/myinfo/member_out_complete.html')">member_out_complete</button></td>
-                        <td></td>
+                        <td class=""></td>
                         <td></td>
                     </tr>
                     <tr>
@@ -523,7 +552,7 @@
                         <td class="menu-header not"></td>
                         <td class="menu-footer do"></td>
                         <td class="link"><button onclick="blink_page('./WEB-INF/views/myinfo/easy_payment_input.html')">easy_payment_input</button></td>
-                        <td></td>
+                        <td class=""></td>
                         <td></td>
                     </tr>
                     <tr>
@@ -535,7 +564,7 @@
                         <td class="menu-header not"></td>
                         <td class="menu-footer not"></td>
                         <td class="link not"></button></td>
-                        <td></td>
+                        <td class=""></td>
                         <td></td>
                     </tr>
                     <tr>
@@ -547,7 +576,7 @@
                         <td class="menu-header not"></td>
                         <td class="menu-footer not"></td>
                         <td class="link not"></button></td>
-                        <td></td>
+                        <td class=""></td>
                         <td></td>
                     </tr>
                     <tr>
@@ -559,131 +588,138 @@
                         <td class="menu-header not"></td>
                         <td class="menu-footer not"></td>
                         <td class="link not"></button></td>
-                        <td></td>
+                        <td class=""></td>
                         <td></td>
                     </tr>
                     <tr>
                         <th scope="row">17</th>
                         <td></td>
                         <td>간편결제 등록완료</td>
-                        <td class="design finish"></td>
+                        <td class="design end"></td>
                         <td class="menubar do"></td>
                         <td class="menu-header not"></td>
                         <td class="menu-footer do"></td>
                         <td class="link"><button onclick="blink_page('./WEB-INF/views/myinfo/easy_payment_complete.html')">easy_payment_complete</button></td>
-                        <td></td>
+                        <td class=""></td>
                         <td></td>
                     </tr>
                     <tr>
                         <th scope="row">18</th>
                         <td></td>
                         <td>주문현황조회</td>
-                        <td class="design finish"></td>
+                        <td class="design end"></td>
                         <td class="menubar do"></td>
                         <td class="menu-header not"></td>
                         <td class="menu-footer do"></td>
                         <td class="link"><button onclick="blink_page('./WEB-INF/views/myinfo/order_list.html')">order_list</button></td>
-                        <td></td>
+                        <td class=""></td>
                         <td></td>
                     </tr>
                     <tr>
                         <th scope="row">19</th>
                         <td></td>
                         <td>주문현황상세</td>
-                        <td class="design finish"></td>
+                        <td class="design end"></td>
                         <td class="menubar do"></td>
                         <td class="menu-header not"></td>
                         <td class="menu-footer do"></td>
                         <td class="link"><button onclick="blink_page('./WEB-INF/views/myinfo/order_list_detail.html')">order_list_detail</button></td>
-                        <td></td>
+                        <td class=""></td>
                         <td></td>
                     </tr>
                     <tr>
                         <th scope="row">20</th>
                         <td></td>
                         <td>내정보</td>
-                        <td class="design finish"></td>
+                        <td class="design end"></td>
                         <td class="menubar do"></td>
                         <td class="menu-header not"></td>
                         <td class="menu-footer do"></td>
                         <td class="link"><button onclick="blink_page('./WEB-INF/views/myinfo/myinfo.html')">myinfo</button></td>
-                        <td></td>
+                        <td class=""></td>
                         <td></td>
                     </tr>
                     <tr>
                         <th scope="row">21</th>
                         <td></td>
                         <td>e거래장</td>
-                        <td class="design finish"></td>
+                        <td class="design end"></td>
                         <td class="menubar do"></td>
                         <td class="menu-header not"></td>
                         <td class="menu-footer do"></td>
                         <td class="link"><button onclick="blink_page('./WEB-INF/views/myinfo/etrade.html')">etrade</button></td>
-                        <td></td>
+                        <td class=""></td>
                         <td></td>
                     </tr>
                     <tr>
                         <th scope="row">22</th>
                         <td>커뮤니티<br />(/WEB-INF/views/community/)</td>
                         <td>공지사항</td>
-                        <td class="design finish"></td>
+                        <td class="design end"></td>
                         <td class="menubar do"></td>
                         <td class="menu-header not"></td>
                         <td class="menu-footer do"></td>
                         <td class="link"><button onclick="blink_page('./WEB-INF/views/community/notice.html')">notice</button></td>
-                        <td></td>
+                        <td class=""></td>
                         <td></td>
                     </tr>
                     <tr>
                         <th scope="row">23</th>
                         <td></td>
                         <td>공지사항 상세</td>
-                        <td class="design finish"></td>
+                        <td class="design end"></td>
                         <td class="menubar do"></td>
                         <td class="menu-header not"></td>
                         <td class="menu-footer do"></td>
                         <td class="link"><button onclick="blink_page('./WEB-INF/views/community/notice_view.html')">notice_view</button></td>
-                        <td></td>
+                        <td class=""></td>
                         <td></td>
                     </tr>
                     <tr>
                         <th scope="row">24</th>
                         <td></td>
                         <td>Q&amp;A</td>
-                        <td class="design finish"></td>
+                        <td class="design end"></td>
                         <td class="menubar do"></td>
                         <td class="menu-header not"></td>
                         <td class="menu-footer do"></td>
                         <td class="link"><button onclick="blink_page('./WEB-INF/views/community/qa.html')">qa</button></td>
-                        <td></td>
+                        <td class=""></td>
                         <td></td>
                     </tr>
                     <tr>
                         <th scope="row">25</th>
                         <td></td>
                         <td>Q&amp;A 상세</td>
-                        <td class="design finish"></td>
+                        <td class="design end"></td>
                         <td class="menubar do"></td>
                         <td class="menu-header not"></td>
                         <td class="menu-footer do"></td>
                         <td class="link"><button onclick="blink_page('./WEB-INF/views/community/qa_view.html')">qa_view</button></td>
-                        <td></td>
+                        <td class=""></td>
                         <td></td>
                     </tr>
                     <tr>
                         <th scope="row">26</th>
                         <td></td>
                         <td>문의하기</td>
-                        <td class="design finish"></td>
+                        <td class="design end"></td>
                         <td class="menubar do"></td>
                         <td class="menu-header not"></td>
                         <td class="menu-footer do"></td>
                         <td class="link"><button onclick="blink_page('./WEB-INF/views/community/qa_write.html')">qa_write</button></td>
-                        <td></td>
+                        <td class=""></td>
                         <td></td>
                     </tr>
                 </tbody>
             </table>
         </div>
+
+        <script>
+            // 새 창 열기
+            function blink_page(url) {
+                newPage=window.open(url);
+            }
+        </script>
     </body>
 </html>

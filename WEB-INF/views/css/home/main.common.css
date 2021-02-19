@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+/* main common */
+body{
+    overflow-x:hidden;
+}
+.container{
+    padding:0;
+}
+.bn-area{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    max-width:768px;
+    margin:0 auto;
+    height:260px;
+    background:red;
+}
+    .bn-area .bx-wrapper{
+        height:100%;
+        margin-bottom:0;
+    }
+    .bn-area .bx-wrapper .bx-pager{
+        padding-top:0;
+        bottom:10px;
+    }
