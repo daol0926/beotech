@@ -145,6 +145,10 @@ header{
         width:24px;
         height:24px;
     }
+
+    .lnb{
+        background-color:#fff;
+    }
     /* //gnb */
 
 .container{

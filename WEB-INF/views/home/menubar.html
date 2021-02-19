@@ -4,424 +4,145 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>메인</title>
+        <title>메뉴바</title>
 
         <!-- common css -->
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
         <link href="../css/common.css" rel="stylesheet">
 
-        <!-- main css -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-        <link href="../css/home/main.common.css" rel="stylesheet">
+        <style>
+            .lnb{
+            }
+                .modal-header,
+                .modal-body{
+                    flex-flow:column;
+                    margin:0 20px;
+                }
+
+                .lnb-header-area,
+                .lnb-menu-area{
+                    width:100%;
+                }
+                .lnb-header-area{
+                    display:flex;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+                .lnb-menu-area ul{
+                    display:flex;
+                    justify-content: space-around;
+                    align-items: center;
+                }
+                .lnb-menu-area ul li{
+                    width:25%;
+                    text-align:center;
+                }
+                .lnb-menu-area .btn{
+                    color:#000;
+                }
+                .lnb-list-area{
+                }
+        </style>
     </head>
     <body>
-        <header>
-            <div class="header-area">
-                <div class="logo-area">
-                    <h1 class="logo">동화 e mall</h1>
-                </div> <!--//logo-area -->
-                <div class="ui-area">
-                    <div class="srch-area">
-                        <label for="">
-                            <input type="text" class="ipt-comn ipt-srch">
-                            <button type="button" class="ico ico-srch"><span>검색</span></button>
-                        </label>
-                    </div> <!--//srch-area -->
-                    <div class="btn-area">
-                        <button type="button" class="ico ico-bag"><span>장바구니</span></button>
-                        <span class="cart-ea">2</span>
-                    </div> <!--//btn-area -->
-                </div> <!--//ui-area -->
-            </div> <!--//header-area -->
-            <div class="menu-area">
-                <ul>
-                    <li><button class="btn txt">베스트상품</button></li>
-                    <li><button class="btn txt">추천상품</button></li>
-                    <li><button class="btn txt">최근본상품</button></li>
-                    <li><button class="btn txt">최근주문상품</button></li>
-                </ul>
-            </div> <!--//menu-area -->
-            <div class="gnb">
-                <ul>
-                    <li><button type="button" class="btn"><span class="ico ico-home"></span>홈</button></li>
-                    <li><button type="button" class="btn"><span class="ico ico-menu"></span>메뉴</button></li>
-                    <li><button type="button" class="btn"><span class="ico ico-srch"></span>검색</button></li>
-                    <li><button type="button" class="btn"><span class="ico ico-cart"></span>장바구니</button></li>
-                    <li><button type="button" class="btn"><span class="ico ico-myinfo"></span>내정보</button></li>
-                </ul>
-            </div> <!--//gnb -->
-        </header>
-        <div class="container">
-            <div class="bn-area">
-                <div class="slider">
-                    <div>11111</div>
-                    <div>22222</div>
-                    <div>33333</div>
-                    <div>44444444</div>
-                </div>
-            </div> <!--//bn-area -->
-            <div class="product-area best">
-                <div class="tit-area">
-                    <h2 class="tit">베스트상품</h2>
-                    <button type="button" class="ico ico-more"><span class="ico-txt">더보기</span></button>
-                </div> <!--//tit-area -->
-                <div class="pr-list-area">
-                    <div class="pr-list-box">
-                        <div class="pr-list-loop">
-                            <div class="img-area">
-                                <div class="pr-rank">
-                                    <span class="num">1</span>
-                                </div>
-                                <img src="" class="pr-img" />
-                            </div>
-                            <div class="desc-area">
-                                <div class="tit-area">
-                                    <span class="tit">까스활명수-큐 (1BOX)</span>
-                                </div>
-                                <div class="price-area">
-                                    <span class="price">104,280</span>
-                                    <button type="button" class="ico ico-cart"><span>장바구니 담기</span></button>
-                                </div>
-                            </div>
-                        </div> <!--//pr-list-loop -->
-                        <div class="pr-list-loop">
-                            <div class="img-area">
-                                <div class="pr-rank">
-                                    <span class="num">2</span>
-                                </div>
-                                <img src="" class="pr-img" />
-                            </div>
-                            <div class="desc-area">
-                                <div class="tit-area">
-                                    <span class="tit">까스활명수-큐 (1BOX)</span>
-                                </div>
-                                <div class="price-area">
-                                    <span class="price">104,280</span>
-                                    <button type="button" class="ico ico-cart"><span>장바구니 담기</span></button>
-                                </div>
-                            </div>
-                        </div> <!--//pr-list-loop -->
-                        <div class="pr-list-loop">
-                            <div class="img-area">
-                                <div class="pr-rank">
-                                    <span class="num">3</span>
-                                </div>
-                                <img src="" class="pr-img" />
-                            </div>
-                            <div class="desc-area">
-                                <div class="tit-area">
-                                    <span class="tit">까스활명수-큐 (1BOX)</span>
-                                </div>
-                                <div class="price-area">
-                                    <span class="price">104,280</span>
-                                    <button type="button" class="ico ico-cart"><span>장바구니 담기</span></button>
-                                </div>
-                            </div>
-                        </div> <!--//pr-list-loop -->
-                    </div> <!--//pr-list-box -->
-                </div> <!--//pr-list-area -->
-            </div> <!--//best-area -->
-            <div class="product-area recommend">
-                <div class="tit-area">
-                    <h2 class="tit">추천상품</h2>
-                    <button type="button" class="ico ico-more"><span>더보기</span></button>
-                </div> <!--//tit-area -->
-                <div class="pr-list-area">
-                    <div class="pr-list-box">
-                        <div class="pr-list-loop">
-                            <div class="img-area">
-                                <div class="pr-rank">
-                                    <span class="num">1</span>
-                                </div>
-                                <img src="" class="pr-img" />
-                            </div>
-                            <div class="desc-area">
-                                <div class="tit-area">
-                                    <span class="tit">까스활명수-큐 (1BOX)</span>
-                                </div>
-                                <div class="price-area">
-                                    <span class="price">104,280</span>
-                                    <button type="button" class="ico ico-cart"><span>장바구니 담기</span></button>
-                                </div>
-                            </div>
-                        </div> <!--//pr-list-loop -->
-                        <div class="pr-list-loop">
-                            <div class="img-area">
-                                <div class="pr-rank">
-                                    <span class="num">2</span>
-                                </div>
-                                <img src="" class="pr-img" />
-                            </div>
-                            <div class="desc-area">
-                                <div class="tit-area">
-                                    <span class="tit">까스활명수-큐 (1BOX)</span>
-                                </div>
-                                <div class="price-area">
-                                    <span class="price">104,280</span>
-                                    <button type="button" class="ico ico-cart"><span>장바구니 담기</span></button>
-                                </div>
-                            </div>
-                        </div> <!--//pr-list-loop -->
-                        <div class="pr-list-loop">
-                            <div class="img-area">
-                                <div class="pr-rank">
-                                    <span class="num">3</span>
-                                </div>
-                                <img src="" class="pr-img" />
-                            </div>
-                            <div class="desc-area">
-                                <div class="tit-area">
-                                    <span class="tit">까스활명수-큐 (1BOX)</span>
-                                </div>
-                                <div class="price-area">
-                                    <span class="price">104,280</span>
-                                    <button type="button" class="ico ico-cart"><span>장바구니 담기</span></button>
-                                </div>
-                            </div>
-                        </div> <!--//pr-list-loop -->
-                    </div> <!--//pr-list-box -->
-                </div> <!--//pr-list-area -->
-            </div> <!--//recommend-area -->
-            <div class="category-area">
-                <div class="tit-area">
-                    <h2 class="tit"><b>CATEGORY</b> PRODUCT</h2>
-                </div>
-                <div class="cate-tab drug">
-                    <div class="tab-tit-area">
-                        <h3 class="tit">일반의약품</h3>
-                        <button class="ico ico-arrow"><span>닫기</span></button>
-                    </div>
-                    <div class="tab-area">
-                        <ul>
-                            <li class="active">전체</li>
-                            <li>소화기관용약</li>
-                            <li>감기약</li>
-                            <li>해열진통 소염제</li>
-                            <li>호흡기/인후염치료제</li>
-                            <li>항히스타민제</li>
-                            <li>피부외용제</li>
-                            <li>잇몸/구강치료제</li>
-                            <li>간장/자양강장제</li>
-                            <li>영양제</li>
-                            <li>외용 소염진통제</li>
-                        </ul>
-                    </div>
-                    <div class="tab-desc-area">
-                        <div class="pr-list-area">
-                            <div class="pr-list-loop">
-                                <div class="img-area">
-                                    <img src="" class="pr-img" />
-                                </div>
-                                <div class="desc-area">
-                                    <div class="tit-area">
-                                        <span class="tit">까스활명수-큐 (1BOX)</span>
-                                    </div>
-                                    <div class="price-area">
-                                        <span class="price">104,280</span>
-                                        <button type="button" class="ico ico-cart"><span>장바구니 담기</span></button>
-                                    </div>
-                                </div>
-                            </div> <!--//pr-list-loop -->
-                            <div class="pr-list-loop">
-                                <div class="img-area">
-                                    <img src="" class="pr-img" />
-                                </div>
-                                <div class="desc-area">
-                                    <div class="tit-area">
-                                        <span class="tit">까스활명수-큐 (1BOX)</span>
-                                    </div>
-                                    <div class="price-area">
-                                        <span class="price">104,280</span>
-                                        <button type="button" class="ico ico-cart"><span>장바구니 담기</span></button>
-                                    </div>
-                                </div>
-                            </div> <!--//pr-list-loop -->
-                        </div> <!--//pr-list-area -->
-                        <div class="btn-area">
-                            <button type="button" class="ico ico-more"><span>더보기</span></button>
+        
+        <button type="button" data-bs-toggle="modal" data-bs-target="#lnbModal">LNB</button>
+        
+        <!-- LNB modal -->
+        <div class="modal fade" id="lnbModal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content lnb">
+                    <div class="modal-header">
+                        <div class="lnb-header-area">
+                            <div class="">로그아웃</div>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-                    </div>
-                </div> <!--//drug -->
-                <div class="cate-tab non-drug">
-                    <div class="tab-tit-area">
-                        <h3 class="tit">의약외품</h3>
-                        <button class="ico ico-arrow"><span>닫기</span></button>
-                    </div>
-                    <div class="tab-area">
-                        <ul>
-                            <li class="active">전체</li>
-                            <li>틀니관리용품</li>
-                            <li>기타</li>
-                        </ul>
-                    </div>
-                    <div class="tab-desc-area">
-                        <div class="pr-list-area">
-                            <div class="pr-list-loop">
-                                <div class="img-area">
-                                    <img src="" class="pr-img" />
-                                </div>
-                                <div class="desc-area">
-                                    <div class="tit-area">
-                                        <span class="tit">까스활명수-큐 (1BOX)</span>
-                                    </div>
-                                    <div class="price-area">
-                                        <span class="price">104,280</span>
-                                        <button type="button" class="ico ico-cart"><span>장바구니 담기</span></button>
-                                    </div>
-                                </div>
-                            </div> <!--//pr-list-loop -->
-                            <div class="pr-list-loop">
-                                <div class="img-area">
-                                    <img src="" class="pr-img" />
-                                </div>
-                                <div class="desc-area">
-                                    <div class="tit-area">
-                                        <span class="tit">까스활명수-큐 (1BOX)</span>
-                                    </div>
-                                    <div class="price-area">
-                                        <span class="price">104,280</span>
-                                        <button type="button" class="ico ico-cart"><span>장바구니 담기</span></button>
-                                    </div>
-                                </div>
-                            </div> <!--//pr-list-loop -->
-                        </div> <!--//pr-list-area -->
-                        <div class="btn-area">
-                            <button type="button" class="ico ico-more"><span>더보기</span></button>
+                        <div class="lnb-menu-area">
+                            <ul>
+                                <li>
+                                    <button type="button" class="btn"><span class="ico ico-bag"></span>장바구니</button>
+                                </li>
+                                <li>
+                                    <button type="button" class="btn"><span class="ico ico-etrade"></span>거래장</button>
+                                </li>
+                                <li>
+                                    <button type="button" class="btn"><span class="ico ico-myinfo"></span>내정보</button>
+                                </li>
+                                <li>
+                                    <button type="button" class="btn"><span class="ico ico-cscenter"></span>고객센터</button>
+                                </li>
+                            </ul>
                         </div>
+                    </div> <!--//lnb-header-area -->
+                    <div class="modal-body">
+                        <div class="lnb-list-area">
+                            <ul>
+                                <li class="lnb-list-loop">
+                                    <button class="lnb-list-tit">카테고리</button>
+                                    <dl>
+                                        <dt>일반의약품</dt>
+                                        <dd>소화기관용약</dd>
+                                        <dd>감기약</dd>
+                                        <dd>해열진통소염제</dd>
+                                        <dd>호흡기/인후염치료제</dd>
+                                        <dd>항히스타민제</dd>
+                                        <dd>피부외용제</dd>
+                                        <dd>잇몸/구강치료제</dd>
+                                        <dd>간장/자양강장제</dd>
+                                        <dd>영양제</dd>
+                                        <dd>외용/소염진통제</dd>
+                                        <dt>의약외품</dt>
+                                        <dd>틀니관리용품</dd>
+                                        <dd>기타</dd>
+                                        <dt>건강기능식품</dt>
+                                        <dd>건강기능식품</dd>
+                                        <dt>기타</dt>
+                                        <dd>식품</dd>
+                                    </dl>
+                                </li>
+                                <li class="lnb-list-loop">
+                                    <button class="lnb-list-tit">베스트상품</button>
+                                    <dl>
+                                        <dt>일반의약품</dt>
+                                        <dd>메뉴1</dd>
+                                        <dt>의약외품</dt>
+                                        <dd>메뉴2</dd>
+                                        <dt>건강기능식품</dt>
+                                        <dd>메뉴3</dd>
+                                        <dt>기타</dt>
+                                        <dd>메뉴4</dd>
+                                    </dl>
+                                </li>
+                                <li class="lnb-list-loop">
+                                    <button class="lnb-list-tit">추천상품</button>
+                                    <dl>
+                                        <dt>일반의약품</dt>
+                                        <dd>추천1</dd>
+                                    </dl>
+                                </li>
+                                <li class="lnb-list-loop">
+                                    <button class="lnb-list-tit">최근본상품</button>
+                                    <dl>
+                                        <dt>일반의약품</dt>
+                                        <dd>최근본상품1</dd>
+                                    </dl>
+                                </li>
+                                <li class="lnb-list-loop">
+                                    <button class="lnb-list-tit">최근주문현황</button>
+                                </li>
+                            </ul>
+                        </div> <!--//lnb-list-area -->
                     </div>
-                </div> <!--//non-drug -->
-                <div class="cate-tab health">
-                    <div class="tab-tit-area">
-                        <h3 class="tit">건강기능식품</h3>
-                        <button class="ico ico-arrow"><span>닫기</span></button>
-                    </div>
-                    <div class="tab-area">
-                        <ul>
-                            <li class="active">건강기능식품</li>
-                        </ul>
-                    </div>
-                    <div class="tab-desc-area">
-                        <div class="pr-list-area">
-                            <div class="pr-list-loop">
-                                <div class="img-area">
-                                    <img src="" class="pr-img" />
-                                </div>
-                                <div class="desc-area">
-                                    <div class="tit-area">
-                                        <span class="tit">까스활명수-큐 (1BOX)</span>
-                                    </div>
-                                    <div class="price-area">
-                                        <span class="price">104,280</span>
-                                        <button type="button" class="ico ico-cart"><span>장바구니 담기</span></button>
-                                    </div>
-                                </div>
-                            </div> <!--//pr-list-loop -->
-                            <div class="pr-list-loop">
-                                <div class="img-area">
-                                    <img src="" class="pr-img" />
-                                </div>
-                                <div class="desc-area">
-                                    <div class="tit-area">
-                                        <span class="tit">까스활명수-큐 (1BOX)</span>
-                                    </div>
-                                    <div class="price-area">
-                                        <span class="price">104,280</span>
-                                        <button type="button" class="ico ico-cart"><span>장바구니 담기</span></button>
-                                    </div>
-                                </div>
-                            </div> <!--//pr-list-loop -->
-                        </div> <!--//pr-list-area -->
-                        <div class="btn-area">
-                            <button type="button" class="ico ico-more"><span>더보기</span></button>
-                        </div>
-                    </div>
-                </div> <!--//health -->
-                <div class="cate-tab other">
-                    <div class="tab-tit-area">
-                        <h3 class="tit">기타</h3>
-                        <button class="ico ico-arrow"><span>닫기</span></button>
-                    </div>
-                    <div class="tab-area">
-                        <ul>
-                            <li class="active">식품</li>
-                        </ul>
-                    </div>
-                    <div class="tab-desc-area">
-                        <div class="pr-list-area">
-                            <div class="pr-list-loop">
-                                <div class="img-area">
-                                    <img src="" class="pr-img" />
-                                </div>
-                                <div class="desc-area">
-                                    <div class="tit-area">
-                                        <span class="tit">까스활명수-큐 (1BOX)</span>
-                                    </div>
-                                    <div class="price-area">
-                                        <span class="price">104,280</span>
-                                        <button type="button" class="ico ico-cart"><span>장바구니 담기</span></button>
-                                    </div>
-                                </div>
-                            </div> <!--//pr-list-loop -->
-                            <div class="pr-list-loop">
-                                <div class="img-area">
-                                    <img src="" class="pr-img" />
-                                </div>
-                                <div class="desc-area">
-                                    <div class="tit-area">
-                                        <span class="tit">까스활명수-큐 (1BOX)</span>
-                                    </div>
-                                    <div class="price-area">
-                                        <span class="price">104,280</span>
-                                        <button type="button" class="ico ico-cart"><span>장바구니 담기</span></button>
-                                    </div>
-                                </div>
-                            </div> <!--//pr-list-loop -->
-                        </div> <!--//pr-list-area -->
-                        <div class="btn-area">
-                            <button type="button" class="ico ico-more"><span>더보기</span></button>
-                        </div>
-                    </div>
-                </div> <!--//other -->
-            </div> <!--//category-area -->
-        </div> <!--//container -->
-        <footer>
-            <div class="cscenter-area">
-                <div class="num-area">
-                    <span class="num">080-023-1897</span>
-                    <span class="num-desc">평일 - 09:00~18:00  토,일 , 공휴일 - 휴뮤</span>
-                </div>
-            </div> <!--//cscenter-area -->
-            <div class="use-guide-area">
-                <dl>
-                    <dd><button class="btn txt small">개인정보 취급방침</button></dd>
-                    <dd><button class="btn txt small">이용약관</button></dd>
-                </dl>
-            </div> <!--//use-guide-area -->
-            <div class="company-area">
-                <div class="company-info-area">
-                    <dl>
-                        <dt>동화약품(주)</dt>
-                        <dd>주소 : 04522 서울특별시 중구 남대문로9길 24 패스트파이브 타워 6~8층</dd>
-                        <dd>전화번호 : 080-023-1897</dd>
-                        <dd>통신판매번호 : 2004-서울중구-02098</dd>
-                        <dd>건강기능식품번호 : 제2009-0433240호</dd>
-                        <dd>사업자 등록번호 : [211-87-04515]</dd>
-                        <dd><button class="btn white small">사업자정보확인</button></dd>
-                    </dl>
-                </div> <!--//company-info-area -->
-                <div class="copyright">COPYRIGHT(C) DONG WHA PHARM. CO., LTD. ALL RIGHTS RESERVED.</div> <!--//copyright -->
-            </div> <!--//company-area -->
-        </footer>
+                </div> <!--//lnb -->
+            </div>
+        </div> <!--//LNB modal -->
+
+        
 
         <!-- script -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-        <script>
-            $(document).ready(function(){
-              $('.slider').bxSlider();
-            });
-          </script>
+        
     </body>
 </html>
