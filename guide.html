@@ -98,6 +98,12 @@
                         content:'해당 없음';
                         color:#888;
                     }
+                    .no::after{
+                        content:'시안 없음';
+                        color:green;
+                        font-weight:600;
+                        text-decoration:underline;
+                    }
                 .design{
                 }
                     .design.end::after{
@@ -189,7 +195,7 @@
                         <td class="design end"></td>
                         <td class="menubar not"></td>
                         <td class="menu-header not"></td>
-                        <td class="menu-footer not"></td>
+                        <td class="menu-footer do"></td>
                         <td class="link"><button onclick="blink_page('./WEB-INF/views/login/login.html')">login</button></td>
                         <td class="status end"></td>
                         <td></td>
@@ -201,7 +207,7 @@
                         <td class="design end"></td>
                         <td class="menubar not"></td>
                         <td class="menu-header not"></td>
-                        <td class="menu-footer not"></td>
+                        <td class="menu-footer do"></td>
                         <td class="link"><button onclick="blink_page('./WEB-INF/views/login/find.html')">find</button></td>
                         <td class=""></td>
                         <td></td>
@@ -213,7 +219,7 @@
                         <td class="design end"></td>
                         <td class="menubar not"></td>
                         <td class="menu-header not"></td>
-                        <td class="menu-footer not"></td>
+                        <td class="menu-footer do"></td>
                         <td class="link"><button onclick="blink_page('./WEB-INF/views/join/join.html')">join</button></td>
                         <td class=""></td>
                         <td></td>
@@ -225,7 +231,7 @@
                         <td class="design end"></td>
                         <td class="menubar not"></td>
                         <td class="menu-header not"></td>
-                        <td class="menu-footer not"></td>
+                        <td class="menu-footer do"></td>
                         <td class="link"><button onclick="blink_page('./WEB-INF/views/join/join_info.html')">join_info</button></td>
                         <td class=""></td>
                         <td></td>
@@ -237,7 +243,7 @@
                         <td class="design end"></td>
                         <td class="menubar not"></td>
                         <td class="menu-header not"></td>
-                        <td class="menu-footer not"></td>
+                        <td class="menu-footer do"></td>
                         <td class="link"><button onclick="blink_page('./WEB-INF/views/join/join_complete.html')">join_complete</button></td>
                         <td class=""></td>
                         <td></td>
@@ -249,7 +255,7 @@
                         <td class="design end"></td>
                         <td class="menubar not"></td>
                         <td class="menu-header not"></td>
-                        <td class="menu-footer not"></td>
+                        <td class="menu-footer do"></td>
                         <td class="link"><button onclick="blink_page('./WEB-INF/views/join/privacy_guide.html')">privacy_guide</button></td>
                         <td class=""></td>
                         <td></td>
@@ -261,7 +267,7 @@
                         <td class="design end"></td>
                         <td class="menubar not"></td>
                         <td class="menu-header not"></td>
-                        <td class="menu-footer not"></td>
+                        <td class="menu-footer do"></td>
                         <td class="link"><button onclick="blink_page('./WEB-INF/views/join/using_guide.html')">using_guide</button></td>
                         <td class=""></td>
                         <td></td>
@@ -379,7 +385,7 @@
                         <th scope="row">5</th>
                         <td></td>
                         <td>추천상품</td>
-                        <td class="design end"></td>
+                        <td class="design no"></td>
                         <td class="menubar do"></td>
                         <td class="menu-header do"></td>
                         <td class="menu-footer do"></td>
@@ -391,7 +397,7 @@
                         <th scope="row">6</th>
                         <td></td>
                         <td>최근 본 상품</td>
-                        <td class="design end"></td>
+                        <td class="design no"></td>
                         <td class="menubar do"></td>
                         <td class="menu-header do"></td>
                         <td class="menu-footer do"></td>
@@ -403,7 +409,7 @@
                         <th scope="row">7</th>
                         <td></td>
                         <td>최근 주문 상품</td>
-                        <td class="design end"></td>
+                        <td class="design no"></td>
                         <td class="menubar do"></td>
                         <td class="menu-header do"></td>
                         <td class="menu-footer do"></td>
@@ -415,7 +421,7 @@
                         <th scope="row">8</th>
                         <td></td>
                         <td>제품상세</td>
-                        <td class="design end"></td>
+                        <td class="design no"></td>
                         <td class="menubar do"></td>
                         <td class="menu-header not"></td>
                         <td class="menu-footer do"></td>
@@ -439,7 +445,7 @@
                         <th scope="row">10</th>
                         <td></td>
                         <td>주문/결제</td>
-                        <td class="design end"></td>
+                        <td class="design no"></td>
                         <td class="menubar do"></td>
                         <td class="menu-header not"></td>
                         <td class="menu-footer do"></td>
@@ -487,7 +493,7 @@
                         <th scope="row">11</th>
                         <td></td>
                         <td>주문완료</td>
-                        <td class="design end"></td>
+                        <td class="design no"></td>
                         <td class="menubar do"></td>
                         <td class="menu-header do"></td>
                         <td class="menu-footer do"></td>
@@ -499,7 +505,7 @@
                         <th scope="row">12</th>
                         <td></td>
                         <td>주문취소완료</td>
-                        <td class="design end"></td>
+                        <td class="design no"></td>
                         <td class="menubar do"></td>
                         <td class="menu-header do"></td>
                         <td class="menu-footer do"></td>
@@ -535,7 +541,7 @@
                         <th scope="row">15</th>
                         <td></td>
                         <td>회원탈퇴완료</td>
-                        <td class="design end"></td>
+                        <td class="design no"></td>
                         <td class="menubar do"></td>
                         <td class="menu-header not"></td>
                         <td class="menu-footer do"></td>
@@ -547,7 +553,7 @@
                         <th scope="row">16</th>
                         <td></td>
                         <td>간편결제등록</td>
-                        <td class=""></td>
+                        <td class="design end"></td>
                         <td class="menubar do"></td>
                         <td class="menu-header not"></td>
                         <td class="menu-footer do"></td>
@@ -559,7 +565,7 @@
                         <th scope="row"></th>
                         <td></td>
                         <td>간편결제등록 데이터 전달</td>
-                        <td class=""></td>
+                        <td class="design not"></td>
                         <td class="menubar not"></td>
                         <td class="menu-header not"></td>
                         <td class="menu-footer not"></td>
@@ -571,7 +577,7 @@
                         <th scope="row"></th>
                         <td></td>
                         <td>간편결제등록 응답 데이터 전달</td>
-                        <td class=""></td>
+                        <td class="design not"></td>
                         <td class="menubar not"></td>
                         <td class="menu-header not"></td>
                         <td class="menu-footer not"></td>
@@ -583,7 +589,7 @@
                         <th scope="row"></th>
                         <td></td>
                         <td>간편결제 결제/등록 승인처리</td>
-                        <td class=""></td>
+                        <td class="design not"></td>
                         <td class="menubar not"></td>
                         <td class="menu-header not"></td>
                         <td class="menu-footer not"></td>
@@ -595,7 +601,7 @@
                         <th scope="row">17</th>
                         <td></td>
                         <td>간편결제 등록완료</td>
-                        <td class="design end"></td>
+                        <td class="design no"></td>
                         <td class="menubar do"></td>
                         <td class="menu-header not"></td>
                         <td class="menu-footer do"></td>
@@ -619,7 +625,7 @@
                         <th scope="row">19</th>
                         <td></td>
                         <td>주문현황상세</td>
-                        <td class="design end"></td>
+                        <td class="design no"></td>
                         <td class="menubar do"></td>
                         <td class="menu-header not"></td>
                         <td class="menu-footer do"></td>
@@ -703,7 +709,7 @@
                         <th scope="row">26</th>
                         <td></td>
                         <td>문의하기</td>
-                        <td class="design end"></td>
+                        <td class="design no"></td>
                         <td class="menubar do"></td>
                         <td class="menu-header not"></td>
                         <td class="menu-footer do"></td>
