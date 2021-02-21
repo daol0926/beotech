@@ -1,6 +1,9 @@
 @charset "UTF-8";
 
 /* join, login common */
+header{
+    margin-bottom:0;
+}
 .logo-area{
     padding:48px 0 40px;
     text-align:center;
