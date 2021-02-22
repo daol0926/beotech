@@ -5,7 +5,7 @@
 
 }
 @media (min-width: 768px){
-    header, .container, footer, .bn-area{
+    header, .container, footer, .gnb, .bn-area{
         max-width:none;
     }
     .pr-list-area{
