@@ -441,6 +441,8 @@ header{
         display: flex;
         align-items: center;
         justify-content: center;
+        padding:5%;
+        box-sizing: border-box;
     }
     .pr-list-loop .pr-rank{
         position: absolute;
@@ -574,6 +576,7 @@ header{
     .main-pr-area .pr-list-area{
         width:calc(100% + 20px);
         overflow-x:auto;
+        justify-content:flex-start;
     }
     .main-pr-area .pr-list-area .pr-list-box .pr-list-loop{
         width:150px;

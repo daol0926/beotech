@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+/* media query */
+@media (max-width:767px){
+
+}
+@media (min-width: 768px){
+    header, .container, footer, .bn-area{
+        max-width:none;
+    }
+    .pr-list-area{
+        justify-content: flex-start;
+    }
+    .pr-list-loop{
+        width:calc(33.33% - 10px);
+        margin-right:10px;
+    }
+}
+@media (min-width: 1024px){
+    .pr-list-loop{
+        width:150px;
+        margin-right:10px;
+    }
+}
