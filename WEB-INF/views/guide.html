@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>GUIDE</title>
+
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+        <!-- common css -->
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" />
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="./css/common.css">
+
+        <!-- media css -->
+        <link rel="stylesheet" type="text/css" href="./css/media/media.common.css" />
+
+        <style>
+            body{
+                padding:0;
+                margin:0;
+            }
+            body *{
+                font-family: 'Noto Sans KR', sans-serif;
+                font-size:13px;
+            }
+            header{
+                border-bottom:2px solid #000;
+                padding:2rem;
+                margin-bottom:1rem;
+            }
+            h1{
+                font-size:40px;
+                font-weight:600;
+            }
+            h2{
+                font-size:20px;
+                font-weight:600;
+                padding:1.5rem 0 1rem;
+            }
+            .tab-pane{
+                padding:1rem;
+            }
+            p.tiny{
+                font-size:10px;
+            }
+            p.small{
+                font-size:12px;
+            }
+            p.mid{
+                font-size:15px;
+            }
+            p.large{
+                font-size:19px;
+            }
+            .tab-content{
+                background:#fff;
+                border-radius:10px;
+                width:100%;
+            }
+
+            @media (max-width: 768px){
+                .align-items-start{
+                    flex-flow:column;
+                }
+                .nav-mb-box{
+                    position:relative;
+                    width:100%;
+                    height:80px;
+                    overflow-x:auto;
+                }
+                .nav-pills{
+                    display:flex;
+                    flex-flow:row wrap;
+                    position:absolute;
+                    flex-direction:row !important;
+                }
+                .tab-content{
+                    width:95%;
+                    margin:0 auto;
+                    margin-bottom:1rem;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>GUIDE</h1>
+        </header>
+        <div class="wrap">
+            <div class="d-flex align-items-start">
+                <div class="nav-mb-box">
+                    <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                        <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Font</button>
+                        <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Button</buttona>
+                        <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Product list</button>
+                        <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Title Header (contents)</button>
+                    </div>
+                </div>
+                <div class="tab-content" id="v-pills-tabContent">
+                    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                        <p class="thin">tiny(10px) - 동화 E mall tiny</p>
+                        <p class="min">small(12px) - 동화 E mall small</p>
+                        <p class="">Normal(13px) - 동화 E mall normal</p>
+                        <p class="mid">Medium(15px) - 동화 E mall mid</p>
+                        <p class="large">Large(19px) - 동화 E mall large</p>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                        <div class="">
+                            <h2 style="padding-top:0;">TINY</h2>
+                            <button type="button" class="btn pink tiny">btn,pink,tiny</button>
+                            <button type="button" class="btn white tiny">btn,white,tiny</button>
+                            <button type="button" class="btn white-gray tiny">btn,white-gray,tiny</button>
+                            <button type="button" class="btn blue tiny">btn,blue,tiny</button>
+                            <button type="button" class="btn light-gray tiny">btn,light-gray,tiny</button>
+                            <button type="button" class="btn txt tiny">btn,txt,tiny</button>
+                        </div>
+                        <div class="">
+                            <h2>SMALL</h2>
+                            <button type="button" class="btn pink small">btn,pink,small</button>
+                            <button type="button" class="btn white small">btn,white,small</button>
+                            <button type="button" class="btn white-gray small">btn,white-gray,small</button>
+                            <button type="button" class="btn blue small">btn,blue,small</button>
+                            <button type="button" class="btn light-gray small">btn,light-gray,small</button>
+                            <button type="button" class="btn txt small">btn,txt,small</button>
+                        </div>
+                        <div class="">
+                            <h2>NORMAL</h2>
+                            <button type="button" class="btn pink">btn,pink</button>
+                            <button type="button" class="btn white">btn,white</button>
+                            <button type="button" class="btn white-gray">btn,white-gray</button>
+                            <button type="button" class="btn blue">btn,blue</button>
+                            <button type="button" class="btn light-gray">btn,light-gray</button>
+                            <button type="button" class="btn txt">btn,txt</button>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                        <div class="pr-list-area">
+                            <div class="pr-list-loop">
+                                <div class="img-area">
+                                    <img src="./images/main/product-sample02.png" class="pr-img" />
+                                </div>
+                                <div class="desc-area">
+                                    <div class="tit-area">
+                                        <span class="tit">까스활명수-큐 (1BOX)</span>
+                                    </div>
+                                    <div class="price-area">
+                                        <span class="price">104,280</span>
+                                        <button type="button" data-bs-toggle="modal" data-bs-target="#cartModal" class="ico ico-cart"><span>장바구니 담기</span></button>
+                                    </div>
+                                </div>
+                            </div> <!--//pr-list-loop -->
+                            <div class="pr-list-loop">
+                                <div class="img-area">
+                                    <img src="./images/main/product-sample03.png" class="pr-img" />
+                                </div>
+                                <div class="desc-area">
+                                    <div class="tit-area">
+                                        <span class="tit">부채표 쌍화골드 도라지 (1BOX)</span>
+                                    </div>
+                                    <div class="price-area">
+                                        <span class="price">104,280</span>
+                                        <button type="button" class="ico ico-cart"><span>장바구니 담기</span></button>
+                                    </div>
+                                </div>
+                            </div> <!--//pr-list-loop -->
+                            <div class="pr-list-loop">
+                                <div class="img-area">
+                                    <img src="./images/main/product-sample02.png" class="pr-img" />
+                                </div>
+                                <div class="desc-area">
+                                    <div class="tit-area">
+                                        <span class="tit">까스활명수-큐 (1BOX)</span>
+                                    </div>
+                                    <div class="price-area">
+                                        <span class="price">104,280</span>
+                                        <button type="button" data-bs-toggle="modal" data-bs-target="#cartModal" class="ico ico-cart"><span>장바구니 담기</span></button>
+                                    </div>
+                                </div>
+                            </div> <!--//pr-list-loop -->
+                            <div class="pr-list-loop">
+                                <div class="img-area">
+                                    <img src="./images/main/product-sample03.png" class="pr-img" />
+                                </div>
+                                <div class="desc-area">
+                                    <div class="tit-area">
+                                        <span class="tit">부채표 쌍화골드 도라지 (1BOX)</span>
+                                    </div>
+                                    <div class="price-area">
+                                        <span class="price">104,280</span>
+                                        <button type="button" class="ico ico-cart"><span>장바구니 담기</span></button>
+                                    </div>
+                                </div>
+                            </div> <!--//pr-list-loop -->
+                            <div class="pr-list-loop">
+                                <div class="img-area">
+                                    <img src="./images/main/product-sample02.png" class="pr-img" />
+                                </div>
+                                <div class="desc-area">
+                                    <div class="tit-area">
+                                        <span class="tit">까스활명수-큐 (1BOX)</span>
+                                    </div>
+                                    <div class="price-area">
+                                        <span class="price">104,280</span>
+                                        <button type="button" data-bs-toggle="modal" data-bs-target="#cartModal" class="ico ico-cart"><span>장바구니 담기</span></button>
+                                    </div>
+                                </div>
+                            </div> <!--//pr-list-loop -->
+                            <div class="pr-list-loop">
+                                <div class="img-area">
+                                    <img src="./images/main/product-sample03.png" class="pr-img" />
+                                </div>
+                                <div class="desc-area">
+                                    <div class="tit-area">
+                                        <span class="tit">부채표 쌍화골드 도라지 (1BOX)</span>
+                                    </div>
+                                    <div class="price-area">
+                                        <span class="price">104,280</span>
+                                        <button type="button" class="ico ico-cart"><span>장바구니 담기</span></button>
+                                    </div>
+                                </div>
+                            </div> <!--//pr-list-loop -->
+                            <div class="pr-list-loop">
+                                <div class="img-area">
+                                    <img src="./images/main/product-sample02.png" class="pr-img" />
+                                </div>
+                                <div class="desc-area">
+                                    <div class="tit-area">
+                                        <span class="tit">까스활명수-큐 (1BOX)</span>
+                                    </div>
+                                    <div class="price-area">
+                                        <span class="price">104,280</span>
+                                        <button type="button" data-bs-toggle="modal" data-bs-target="#cartModal" class="ico ico-cart"><span>장바구니 담기</span></button>
+                                    </div>
+                                </div>
+                            </div> <!--//pr-list-loop -->
+                            <div class="pr-list-loop">
+                                <div class="img-area">
+                                    <img src="./images/main/product-sample03.png" class="pr-img" />
+                                </div>
+                                <div class="desc-area">
+                                    <div class="tit-area">
+                                        <span class="tit">부채표 쌍화골드 도라지 (1BOX)</span>
+                                    </div>
+                                    <div class="price-area">
+                                        <span class="price">104,280</span>
+                                        <button type="button" class="ico ico-cart"><span>장바구니 담기</span></button>
+                                    </div>
+                                </div>
+                            </div> <!--//pr-list-loop -->
+                            <div class="pr-list-loop">
+                                <div class="img-area">
+                                    <img src="./images/main/product-sample02.png" class="pr-img" />
+                                </div>
+                                <div class="desc-area">
+                                    <div class="tit-area">
+                                        <span class="tit">까스활명수-큐 (1BOX)</span>
+                                    </div>
+                                    <div class="price-area">
+                                        <span class="price">104,280</span>
+                                        <button type="button" data-bs-toggle="modal" data-bs-target="#cartModal" class="ico ico-cart"><span>장바구니 담기</span></button>
+                                    </div>
+                                </div>
+                            </div> <!--//pr-list-loop -->
+                            <div class="pr-list-loop">
+                                <div class="img-area">
+                                    <img src="./images/main/product-sample03.png" class="pr-img" />
+                                </div>
+                                <div class="desc-area">
+                                    <div class="tit-area">
+                                        <span class="tit">부채표 쌍화골드 도라지 (1BOX)</span>
+                                    </div>
+                                    <div class="price-area">
+                                        <span class="price">104,280</span>
+                                        <button type="button" class="ico ico-cart"><span>장바구니 담기</span></button>
+                                    </div>
+                                </div>
+                            </div> <!--//pr-list-loop -->
+                        </div> <!--//pr-list-area -->
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                        Title Header (contents)
+                    </div>
+                </div>
+            </div>
+        </div> <!--//wrap -->
+
+        <!-- script -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+    </body>
+</html>

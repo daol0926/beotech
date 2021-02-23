@@ -10,10 +10,10 @@
         <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" />
         <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato" />
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" href="../css/common.css">
+        <link rel="stylesheet" type="text/css" href="./css/common.css">
 
         <!-- media css -->
-        <link rel="stylesheet" type="text/css" href="../css/media/media.common.css" />
+        <link rel="stylesheet" type="text/css" href="./css/media/media.common.css" />
     </head>
     <body>
         <header>
@@ -52,58 +52,30 @@
                 </ul>
             </div> <!--//gnb -->
         </header>
-        <div class="container">
-            <div class="product-area">
-                <div class="pr-tit-area">
-                    <h2 class="tit">‘쌍’ 검색결과 <b>2</b>건</h2>
-                </div>
-                <div class="pr-list-area">
-                    <div class="pr-list-loop">
-                        <div class="img-area">
-                            <img src="../images/main/product-sample02.png" class="pr-img" />
-                        </div>
-                        <div class="desc-area">
-                            <div class="tit-area">
-                                <span class="tit">까스활명수-큐 (1BOX)</span>
-                            </div>
-                            <div class="price-area">
-                                <span class="price">104,280</span>
-                                <button type="button" data-bs-toggle="modal" data-bs-target="#cartModal" class="ico ico-cart"><span>장바구니 담기</span></button>
-                            </div>
 
-                            <div class="modal fade" id="cartModal" tabindex="-1" aria-hidden="true">
-                                <div class="modal-dialog modal-dialog-centered">
-                                    <div class="modal-content pop-comn">
-                                        <div class="modal-body">
-                                            <span class="ico ico-question"></span>
-                                            <p class="desc-area">장바구니에 추가되었습니다.<br />장바구니로 이동하시겠습니까?</p>
-                                        </div>
-                                        <div class="btn-area">
-                                            <button type="button" class="btn blue">확인</button>
-                                            <button type="button" class="btn light-gray" data-bs-dismiss="modal" aria-label="Close">취소</button>
-                                        </div>
-                                    </div> <!--//pop-comn -->
-                                </div> <!--//modal-dialog -->
-                            </div> <!--//cart modal -->
-                        </div>
-                    </div> <!--//pr-list-loop -->
-                    <div class="pr-list-loop">
-                        <div class="img-area">
-                            <img src="../images/main/product-sample03.png" class="pr-img" />
-                        </div>
-                        <div class="desc-area">
-                            <div class="tit-area">
-                                <span class="tit">부채표 쌍화골드 도라지 (1BOX)</span>
+        <div class="container" style="padding:20px;">
+            <div class=""> <!-- 장바구니 담기 -->
+                <div class="price-area">
+                    <button type="button" data-bs-toggle="modal" data-bs-target="#cartModal"><span>장바구니 담기</span></button>
+                </div>
+
+                <div class="modal fade" id="cartModal" tabindex="-1" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content pop-comn">
+                            <div class="modal-body">
+                                <span class="ico ico-question"></span>
+                                <p class="desc-area">장바구니에 추가되었습니다.<br />장바구니로 이동하시겠습니까?</p>
                             </div>
-                            <div class="price-area">
-                                <span class="price">104,280</span>
-                                <button type="button" class="ico ico-cart"><span>장바구니 담기</span></button>
+                            <div class="btn-area">
+                                <button type="button" class="btn blue">확인</button>
+                                <button type="button" class="btn light-gray" data-bs-dismiss="modal" aria-label="Close">취소</button>
                             </div>
-                        </div>
-                    </div> <!--//pr-list-loop -->
-                </div> <!--//pr-list-area -->
-            </div> <!--//product-area -->
+                        </div> <!--//pop-comn -->
+                    </div> <!--//modal-dialog -->
+                </div> <!--//cart modal -->
+            </div> <!-- //장바구니 담기 -->
         </div> <!--//container -->
+
         <footer>
             <div class="cscenter-area">
                 <div class="num-area">
