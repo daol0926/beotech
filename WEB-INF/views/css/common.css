@@ -124,7 +124,7 @@ header{
         height:60px;
         display:flex;
         align-items: center;
-        z-index:9999;
+        z-index:1;
     }
     .gnb ul{
         width:100%;
@@ -145,12 +145,62 @@ header{
         font-size:10px;
         padding:0;
     }
-    .gnb ul li .ico{
+    .gnb ul li .btn .ico{
         display:block;
         margin:0 auto 10px;
         width:24px;
         height:24px;
     }
+    .gnb .srch-on-area{
+        position:absolute;
+        left:0;
+        bottom:0;
+        width:100%;
+        border-radius:20px 20px 0 0;
+        height:250px;
+        padding:25px 20px;
+        box-sizing:border-box;
+        background-color:#fff;
+    }
+    .gnb .srch-on-area .srch-area{
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        border-bottom:2px solid #ff5550;
+        padding:4px 3px 4px 0;
+        margin-right:0;
+    }
+    .gnb .srch-on-area .srch-area label{
+        width:calc(100% - 24px);
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+    }
+    .gnb .srch-on-area .srch-area .ipt-comn.ipt-srch{
+        padding-left:0;
+        width:calc(100% - 24px);
+        min-width:unset;
+        max-width:unset;border:0;
+    }
+    .gnb .srch-on-area .srch-area .ipt-comn.ipt-srch::placeholder{
+        color:#dcdcdc;
+    }
+    .gnb .srch-on-area .srch-area .ico.ico-srch{
+        position:unset;
+        top:unset;
+        right:unset;
+    }
+    .gnb .srch-on-area .srch-on-bg{
+        position:fixed;
+        background-color:#000;
+        opacity:.5;
+        width:100%;
+        height:100%;
+        top:0;
+        left:0;
+        z-index:-1;
+    }
+
     .lnb{
     }
         .lnb .modal-header,
@@ -279,9 +329,16 @@ header{
         height:17px;
         background-image:url('');
     }
+
     .ico.ico-bag{
         width:19px;
         height:18px;
+    }
+
+    .ico.ico-arrow-prev{
+        margin:0;
+        width:15px;
+        height:10px;
     }
 
 /* button */
@@ -312,7 +369,13 @@ header{
         border:1px solid #e5e5e5;
         color:#1b1b1b;
         border-radius:0;
-
+    }
+    .btn.blue{
+        background-color:#2196f3;
+    }
+    .btn.light-gray{
+        background-color:#efefef;
+        color:#1b1b1b;
     }
     .btn.txt{
         color:#000;
@@ -696,6 +759,58 @@ header{
     .cate-tab.health .pr-list-loop .price-area .ico.ico-cart{
         background-color:#5868be;
     }
+/* //cate-area */
+
+/* modal, popup */
+.modal-dialog.pop-dialog{
+    margin:0 1rem;
+}
+.pop-comn{
+    /*width: 160px;
+    height: 130px;
+    margin: 37.5px 10px 27.5px;
+    padding: 17px 0 0;
+    */
+    border-radius:10px;
+    box-shadow:0 3px 5px 0 rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+  }
+  .pop-comn .modal-body{
+      display: flex;
+      justify-content: center;
+      flex-flow:column;
+      padding:35px 1rem 40px;
+      align-items: center;
+  }
+  .pop-comn .ico.ico-question{
+      width:70px;
+      height:70px;
+      background-color:#2196f3;
+      border-radius:10px;
+      margin-bottom:20px;
+  }
+  .pop-comn .desc-area{
+      font-size:17px;
+      color:#1b1b1b;
+      text-align:center;
+      margin:0;
+      padding:0;
+  }
+  .pop-comn .btn-area{
+      display: flex;
+      justify-content: space-around;
+  }
+  .pop-comn .btn-area .btn{
+      border-radius:0;
+      width:50%;
+  }
+  .pop-comn .btn-area .btn:first-child{
+      border-radius:0 0 0 10px;
+  }
+  .pop-comn .btn-area .btn:last-child{
+      border-radius:0 0 10px 0;
+  }
+/* //pop-comn */
 
 footer{
     margin-top:10px;
