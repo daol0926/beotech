@@ -4,6 +4,25 @@
 header{
     margin-bottom:0;
 }
+
+header .tit-area{
+    display:flex;
+    flex-flow:row;
+    align-items:center;
+    padding:10px 20px;
+    margin-bottom:10px;
+}
+
+header .tit-area .tit{
+    font-size:17px;
+    color:#242424;
+    text-align:center;
+    width:calc(100% - 30px);
+}
+header .tit-area.pink .tit{
+    color:#ff5550;
+}
+
 .logo-area{
     padding:48px 0 40px;
     text-align:center;
@@ -13,4 +32,30 @@ header{
         width:170px;
         height:42px;
         margin:0 auto;
+    }
+
+.join-agree-area{
+    padding:15px 0 1px 0;
+}
+    .join-agree-area ol{
+        padding-bottom:15px;
+    }
+    .join-agree-area ol li{
+        margin-bottom:15px;
+    }
+    .join-agree-area .tit{
+        font-size:10px;
+        margin-bottom:5px;
+    }
+    .join-agree-area .desc{
+        white-space: pre-line;
+        font-size:10px;
+        margin-bottom:5px;
+    }
+    .join-agree-area .desc.typeB{
+        margin-left:10px;
+    }
+    .join-agree-area .tbl-comn li:before{
+        content:'-';
+        margin-right:5px;
     }

@@ -428,6 +428,33 @@ header{
         margin-bottom:10px;
     }
 /* //ipt-area */
+.tbl-comn{
+    margin-bottom:25px;
+}
+    .tbl-comn table{
+        width:100%;
+    }
+    .tbl-comn th,
+    .tbl-comn td{
+        border:1px solid rgb(229,229,229);
+        font-size:10px;
+        padding:10px;
+    }
+    .tbl-comn tbody th{
+        background-color:rgb(245,245,245);
+        font-weight:normal;
+        text-align:center;
+    }
+    .tbl-comn tbody th:first-child{
+        border-left:0;
+    }
+    .tbl-comn tbody td:last-child{
+        border-right:0;
+    }
+    .tbl-comn tbody td li{
+        font-size:10px;
+    }
+/* //tbl-comn */
 
 .chk-area{
     display:flex;
