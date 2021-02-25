@@ -39,6 +39,7 @@
                 font-weight:600;
                 padding:1.5rem 0 1rem;
             }
+            .nav-mb-box{width:200px;}
             .tab-pane{
                 padding:1rem;
             }
@@ -57,29 +58,34 @@
             .tab-content{
                 background:#fff;
                 border-radius:10px;
-                width:100%;
+                width:calc(100% - 200px);
             }
+            .color-set{
+                margin-bottom:2rem;
+            }
+            .color-set span{display:inline-block;padding:1rem;width:calc(50% - 2px);height:50px;text-align:center;color:#fff;}
+            .color-set .c-white{color:#000;}
+            .color-set .c-blue{background-color:rgb(92,82,208);}
+            .color-set .c-pink{background-color:rgb(255,85,80);}
+            .color-set .c-white{background-color:rgb(247,247,247);}
+            .color-set .c-gray.c1{background-color:rgb(90,90,94);}
+            .color-set .c-gray.c2{background-color:rgb(67,67,67);}
+            .color-set .c-white.c2{background-color:rgb(229,229,229);}
+            .color-set .c-blue.c2{background-color:rgb(34,157,232);}
+            .color-set .c-gray.c3{background-color:rgb(104,104,104);}
+            .color-set .c-white.c3{background-color:rgb(255,243,243);}
+            .color-set .c-white.c4{background-color:rgb(238,238,238);}
+            .color-set .c-pink.c2{background-color:rgb(239,88,100);}
+            .color-set .c-gray.c3{background-color:rgb(75,75,75);}
 
             @media (max-width: 768px){
                 .align-items-start{
+                    display:flex;
                     flex-flow:column;
                 }
-                .nav-mb-box{
-                    position:relative;
-                    width:100%;
-                    height:80px;
-                    overflow-x:auto;
-                }
-                .nav-pills{
-                    display:flex;
-                    flex-flow:row wrap;
-                    position:absolute;
-                    flex-direction:row !important;
-                }
+                .nav-mb-box,
                 .tab-content{
-                    width:95%;
-                    margin:0 auto;
-                    margin-bottom:1rem;
+                    width:100%;
                 }
             }
         </style>
@@ -92,7 +98,7 @@
             <div class="d-flex align-items-start">
                 <div class="nav-mb-box">
                     <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                        <button class="nav-link active" id="guide-font-tab" data-bs-toggle="pill" data-bs-target="#guide-font" type="button" role="tab" aria-controls="guide-font" aria-selected="true">Font</button>
+                        <button class="nav-link active" id="guide-font-tab" data-bs-toggle="pill" data-bs-target="#guide-font" type="button" role="tab" aria-controls="guide-font" aria-selected="true">Color&amp;Font</button>
                         <button class="nav-link" id="guide-button-tab" data-bs-toggle="pill" data-bs-target="#guide-button" type="button" role="tab" aria-controls="guide-button" aria-selected="false">Button</buttona>
                         <button class="nav-link" id="guide-prodcut-list-tab" data-bs-toggle="pill" data-bs-target="#guide-prodcut-list" type="button" role="tab" aria-controls="guide-prodcut-list" aria-selected="false">Product list</button>
                         <button class="nav-link" id="guide-tit-header-tab" data-bs-toggle="pill" data-bs-target="#guide-tit-header" type="button" role="tab" aria-controls="guide-tit-header" aria-selected="false">Title Header (contents)</button>
@@ -100,6 +106,20 @@
                 </div>
                 <div class="tab-content" id="v-pills-tabContent">
                     <div class="tab-pane fade show active" id="guide-font" role="tabpanel" aria-labelledby="guide-font-tab">
+                        <div class="color-set">
+                            <span class="c-blue">rgb(92,82,208)</span>
+                            <span class="c-pink">rgb(255,85,80)</span>
+                            <span class="c-white">rgb(247,247,247)</span>
+                            <span class="c-gray c1">rgb(90,90,94)</span>
+                            <span class="c-gray c2">rgb(67,67,67)</span>
+                            <span class="c-white c2">rgb(229,229,229)</span>
+                            <span class="c-blue c2">rgb(34,157,232)</span>
+                            <span class="c-gray c3">rgb(104,104,104)</span>
+                            <span class="c-white c3">rgb(255,243,243)</span>
+                            <span class="c-white c4">rgb(238,238,238)</span>
+                            <span class="c-pink c2">rgb(239,88,100)</span>
+                            <span class="c-gray c3">rgb(75,75,75)</span>
+                        </div>
                         <p class="thin">tiny(10px) - 동화 E mall tiny</p>
                         <p class="min">small(12px) - 동화 E mall small</p>
                         <p class="">Normal(13px) - 동화 E mall normal</p>

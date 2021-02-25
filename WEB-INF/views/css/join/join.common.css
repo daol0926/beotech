@@ -74,7 +74,7 @@ header.join .logo-area .logo{
         font-size:15px;
     }
     .join-tab-comn ol li.active{
-        background-color:#ff5550;
+        background-color:rgb(92,82,208);
         color:#fff;
         z-index:1;
     }
