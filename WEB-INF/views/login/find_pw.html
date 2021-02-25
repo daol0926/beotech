@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>로그인</title>
+        <title>아이디/비밀번호 찾기</title>
 
         <!-- common css -->
         <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" />
@@ -19,30 +19,50 @@
         <link rel="stylesheet" type="text/css" href="../css/media/media.common.css" />
     </head>
     <body>
-        <header>
+        <header class="join">
             <div class="logo-area">
                 <h1 class="logo">동화 e mall</h1>
             </div>
         </header>
         <div class="container">
-            <div class="login-area">
-                <div class="ipt-area">
-                    <input type="text" placeholder="아이디" class="ipt-comn">
-                    <input type="text" placeholder="비밀번호" class="ipt-comn">
-                </div>
-                <div class="chk-area">
-                    <input type="checkbox" class="ipt-chk"><span class="ipt-chk-txt">아이디 저장</span>
-                </div>
-                <div class="btn-area">
-                    <div class="btn-box">
-                        <button class="btn pink">로그인</button>
+            <div class="tit-area center">
+                <h2 class="tit">아이디/비밀번호 찾기</h2>
+                <div class="desc-area">아이디 또는 비밀번호가 기억나지 않으시면 해당하는 정보를 입력해주세요.</div>
+            </div>
+            <div class="join-tab-comn depth2">
+                <button type="button" class="btn white-gray">아이디찾기</button>
+                <button type="button" class="btn pink">비밀번호찾기</button>
+            </div> <!--//join-tab-comn -->
+            <div class="ipt-area">
+                <div class="ipt-loop">
+                    <span class="ipt-tit">상호명</span>
+                    <input type="text" class="ipt-comn" />
+                </div> <!--//ipt-loop -->
+                <div class="ipt-loop">
+                    <span class="ipt-tit">사업자번호</span>
+                    <div class="ipt-desc">
+                        <input type="number" class="ipt-comn" maxlength="3" oninput="maxLengthCheck(this)" /> - 
+                        <input type="number" class="ipt-comn" maxlength="2" oninput="maxLengthCheck(this)" /> - 
+                        <input type="number" class="ipt-comn" maxlength="5" oninput="maxLengthCheck(this)" />
+                    </div>    
+                </div> <!--//ipt-loop -->
+                <div class="ipt-loop">
+                    <span class="ipt-tit">휴대폰번호</span>
+                    <div class="ipt-desc">
+                        <input type="number" class="ipt-comn" maxlength="3" oninput="maxLengthCheck(this)" /> - 
+                        <input type="number" class="ipt-comn" maxlength="4" oninput="maxLengthCheck(this)" /> - 
+                        <input type="number" class="ipt-comn" maxlength="4" oninput="maxLengthCheck(this)" />
                     </div>
-                    <div class="desc-btn-box">
-                        <button class="btn txt small">회원가입</button>
-                        <button class="btn txt small">아이디/비밀번호 찾기</button>
-                    </div>
-                </div>
-            </div> <!--//login-area -->
+                </div> <!--//ipt-loop -->
+                <div class="btn-area normal full">
+                    <button type="button" class="btn pink">확인</button>
+                </div> <!--//btn-area -->
+                <div class="page-desc-area">
+                    <ul>
+                        <li>궁금한 사항이 있으실 경우 동화약품 eMall 고객센터 ☎ 080-023-1897로 문의해 주시기 바랍니다.</li>
+                    </ul>
+                </div> <!--//page-desc-area -->
+            </div>
         </div> <!--//container -->
         <footer>
             <div class="cscenter-area">

@@ -405,6 +405,9 @@ header{
     border:1px solid #e5e5e5;
     color:#959595;
 }
+    input[type=number].ipt-comn{
+        width:calc(33.33% - 10px);
+    }
     .ipt-comn.ipt-srch{
         width:100%;
         height:30px;
@@ -420,15 +423,24 @@ header{
 /* //input */
 
 .ipt-area{
-    display:flex;
-    flex-flow:column;
-    background-color:#fff;
-    padding:10px 0;
 }
-    .ipt-area .ipt-comn{
+    .ipt-area .ipt-loop{
+        display:flex;
+        flex-flow:column;
+        background-color:#fff;
+        padding:10px 0;
+    }
+    .ipt-area .ipt-loop .ipt-tit{
+        font-size:15px;
         margin-bottom:10px;
     }
+    .ipt-area .ipt-loop .ipt-desc{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 /* //ipt-area */
+
 .tbl-comn{
     margin-bottom:25px;
 }
@@ -484,6 +496,9 @@ header{
     }
     .btn-area.normal .btn:first-child{
         margin-left:0;
+    }
+    .btn-area.full .btn{
+        width:100%;
     }
     .btn-area .btn-box{
         display:flex;
