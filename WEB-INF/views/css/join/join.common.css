@@ -12,7 +12,6 @@ header .tit-area{
     padding:10px 20px;
     margin-bottom:10px;
 }
-
 header .tit-area .tit{
     font-size:17px;
     color:#242424;
@@ -21,6 +20,13 @@ header .tit-area .tit{
 }
 header .tit-area.pink .tit{
     color:#ff5550;
+}
+
+header.join .logo-area{
+    padding:10px 0;
+}
+header.join .logo-area .logo{
+    width:120px;
 }
 
 .logo-area{
@@ -58,4 +64,158 @@ header .tit-area.pink .tit{
     .join-agree-area .tbl-comn li:before{
         content:'-';
         margin-right:5px;
+    }
+
+    
+.join-tab-comn{
+    border-bottom:10px solid #eee;
+    margin:0 -20px;
+    margin-top:10px;
+}
+    .join-tab-comn ol{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        width:100%;
+    }
+    .join-tab-comn ol li{
+        width:calc(33.33% + 15px);
+        background-color:#fff;
+        border:1px solid #e5e5e5;
+        border-width:1px 0;
+        text-align:center;
+        padding:27px;
+        margin-right:-15px;
+        font-size:15px;
+    }
+    .join-tab-comn ol li.active{
+        background-color:#ff5550;
+        color:#fff;
+        z-index:1;
+    }
+    .join-tab-comn ol li:last-child{
+        margin-right:0;
+    }
+    
+    .join-tab-comn.depth2{
+        background:#eee;
+        padding:0 20px;
+        display:flex;
+        justify-content: space-between;
+    }
+    .join-tab-comn.depth2 .btn{
+        width:50%;
+        margin-right:0;
+        border-radius:0;
+    }
+
+.join-agree-list-area{
+        padding:25px 0 30px 0;
+        box-sizing:border-box;
+    }
+    .join-agree-list-area .tit-area{
+        margin-bottom:20px;
+    }
+    .join-agree-list-area .tit-area .tit{
+        font-size:25px;
+        font-weight:600;
+    }
+    .join-agree-list-area .desc-area{
+        font-size:10px;
+        margin-top:-10px;
+        margin-bottom:20px;
+        white-space:pre-line;
+    }
+    .join-agree-list-area .list-area{
+        display: flex;
+        align-items: center;
+        flex-flow:column;
+    }
+    .join-agree-list-area .list-area dl,
+    .join-agree-list-area .list-area ul,
+    .join-agree-list-area .list-area ol{
+        width:100%;
+    }
+    .join-agree-list-area .list-area ol li{
+        list-style:inside;
+    }
+    .join-agree-list-area .list-area .list-loop .tit b{
+        font-weight:normal;
+        font-size:15px;
+    }
+    .join-agree-list-area .list-area .list-tit,
+    .join-agree-list-area .list-area .list-loop.border{
+        border:1px solid #e5e5e5;
+    }
+    .join-agree-list-area .list-area .list-tit,
+    .join-agree-list-area .list-area .list-loop{
+        margin-bottom:10px;
+        display: flex;
+        align-items: center;
+        flex-flow:row wrap;
+        text-align:center;
+        justify-content: space-between;
+    }
+    .join-agree-list-area .list-area .list-loop.border{
+        padding:13px 10px;
+        border:1px solid #e5e5e5;
+    }
+    .join-agree-list-area .list-area .list-loop.border .tit{
+        font-size:15px;
+        font-weight:600;
+    }
+    .join-agree-list-area .list-area .ipt-comn{
+        padding:16px 10px;
+        border:0;
+    }
+    .join-agree-list-area .list-area .ipt-chk-txt{
+        font-size:15px;
+        font-weight:normal;
+    }
+    .join-agree-list-area .list-area .list-tit .ipt-comn{
+        text-align:center;
+        width:100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .join-agree-list-area .list-area .list-tit .ipt-comn .ipt-chk-txt{
+        width:100%;
+        margin-left:-15px;
+        text-align: center;
+        display: inline-block;
+    }
+
+.join-complete-area{
+    border:1px solid #e5e5e5;
+    padding:20px 12px 15px 12px;
+    display:flex;
+    flex-flow: column;
+}
+    .join-complete-area .desc-tit-img{
+        border:2px solid #ff5550;
+        background-color:#eee;
+        width:120px;
+        height:120px;
+        border-radius:50%;
+        margin:0 auto;
+    }
+    .join-complete-area .desc-tit{
+        font-size:20px;
+        font-weight:600;
+        text-align:center;
+        margin:24px 0 17px;
+    }
+    .join-complete-area .desc-area{
+        font-size:13px;
+        word-break: keep-all;
+        margin-bottom:0;
+    }
+    .join-complete-area .desc-area b{
+        color:#ff5550;
+        font-weight:normal;
+    }
+    .join-complete-area .desc-area b.bold{
+        font-size:15px;
+        font-weight:600;
     }

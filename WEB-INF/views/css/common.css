@@ -347,7 +347,7 @@ header{
     font-size:15px;
     color:#fff;
     padding:13px 0;
-    border-radius:10px;
+    border-radius:5px;
 }
 
     .btn:hover,
@@ -367,6 +367,7 @@ header{
     }
     .btn.white-gray{
         border:1px solid #e5e5e5;
+        background-color:#fff;
         color:#1b1b1b;
         border-radius:0;
     }
@@ -465,6 +466,25 @@ header{
 
 .btn-area{
 }
+    .btn-area.normal{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom:30px;
+    }
+    .btn-area.normal .btn{
+        width:calc(50% - 10px);
+        min-width:150px;
+        border-radius:5px;
+        margin-right:10px;
+    }
+    .btn-area.normal .btn:last-child{
+        margin-left:10px;
+        margin-right:0;
+    }
+    .btn-area.normal .btn:first-child{
+        margin-left:0;
+    }
     .btn-area .btn-box{
         display:flex;
         flex-flow:column;
@@ -918,5 +938,9 @@ footer{
         font-size:12px;
     }
 /* //footer */
+
+/* margin, padding */
+.pd-b15{padding-bottom:15px !important;}
+/* //margin, padding */
 
 /* //common */
