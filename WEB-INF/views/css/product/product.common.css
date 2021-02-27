@@ -1,0 +1,98 @@
+@charset "UTF-8";
+
+.container.pr-detail{
+    padding:0;
+}
+.detail-area{
+}
+    .detail-area .img-area{
+        height:320px;
+        display:flex;
+        flex-flow:column;
+        justify-content: center;
+        align-items: center;
+        border:1px solid #a0a0a0;
+    }
+
+    .detail-area .pr-txt-area{
+        padding:0 10px;
+    }
+
+    .detail-area .tit-area{
+        padding:10px;
+    }
+        .detail-area .tit-area .tit{
+            font-size:15px;
+        }
+
+    .detail-area .price-area{
+        margin-bottom:10px;
+        }
+        .detail-area .price-area .price-before{
+            color:#a0a0a0;
+            font-size:10px;
+            padding:10px;
+        }
+        .detail-area .price-area .price{
+            font-size:17px;
+        }
+
+    .detail-area .tit-desc-area{
+        border-top:1px solid #a0a0a0;
+        padding:10px;
+    }
+    .detail-area .tit-desc-area .tit{
+        margin-bottom:10px;
+        font-weight:normal;
+    }
+    .detail-area .tit-desc-area b{
+        color:#434343;
+        font-size:10px;
+    }
+    .detail-area .tit-desc-area .c-blue{
+        color:#229de8;
+        font-weight:normal;
+    }
+    .detail-area .tit-desc-area .c-green{
+        color:#2cb872;
+    }
+    .detail-area .tit-desc-area .tit-desc-li{
+        font-size:10px;
+        margin-left:19px;
+        margin-bottom:7px;
+    }
+    .detail-area .tit-desc-area .tit-desc-txt{
+        font-size:10px;
+    }
+    .detail-area .tit-desc-area .tit-desc-txt.tit{
+        display:inline-block;
+        min-width:100px;
+        margin-right:20px;
+        margin-bottom:0;
+    }
+    .detail-area .tit-desc-area.line1 .tit-desc-li{
+        font-size:13px;
+    }
+
+    .detail-area .desc-area{
+    }
+        .detail-area .desc-area .tit-area{
+            background-color:#313131;
+        }
+        .detail-area .desc-area .tit-area .tit{
+            color:#fff;
+        }
+        .detail-area .desc-area .tit-desc-area{
+            padding:20px;
+        }
+        .detail-area .desc-area .tit-desc-area .tit{
+            margin-bottom:5px;
+        }
+        .detail-area .desc-area .tit-desc-area .tit-desc-li.type-mg0{
+            margin-left:0;
+        }
+        .detail-area .desc-area .tit-desc-area .tit-desc-li{
+            margin-left:10px;
+
+        }
+/* //detail-area */

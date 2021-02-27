@@ -54,26 +54,60 @@
         </header>
 
         <div class="container" style="padding:20px;">
-            <div class=""> <!-- 장바구니 담기 -->
-                <div class="price-area">
-                    <button type="button" data-bs-toggle="modal" data-bs-target="#cartModal"><span>장바구니 담기</span></button>
-                </div>
+            <button type="button" data-bs-toggle="modal" data-bs-target="#cartModal"><span>장바구니 담기</span></button>
+            <button type="button" data-bs-toggle="modal" data-bs-target="#findAddress"><span>주소찾기</span></button>
 
-                <div class="modal fade" id="cartModal" tabindex="-1" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content pop-comn">
-                            <div class="modal-body">
+            <!-- 장바구니 추가 -->
+            <div class="modal fade" id="cartModal" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content pop-comn pop-cart">
+                        <div class="modal-body">
+                            <div class="ico-question-bg">
                                 <span class="ico ico-question"></span>
-                                <p class="desc-area">장바구니에 추가되었습니다.<br />장바구니로 이동하시겠습니까?</p>
                             </div>
+                            <p class="desc-area">장바구니에 추가되었습니다.<br />장바구니로 이동하시겠습니까?</p>
+                        </div>
+                        <div class="btn-area">
+                            <button type="button" class="btn blue">확인</button>
+                            <button type="button" class="btn light-gray" data-bs-dismiss="modal" aria-label="Close">취소</button>
+                        </div>
+                    </div> <!--//pop-comn -->
+                </div> <!--//modal-dialog -->
+            </div> <!--//cart modal -->
+            <!--//장바구니 추가 -->
+            
+            <!-- 주소찾기 -->
+            <div class="modal fade" id="findAddress" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered pop-comn pop-find-address">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <div class="tit-area">
+                                <h1 class="tit">주소찾기</h1>
+                            </div>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div> <!--//modal-header -->
+                        <div class="modal-body">
+                            <div class="ipt-area">
+                                <input type="text" class="ipt-comn ipt-full" placeholder="우편번호 또는 동/읍/면 명칭을 입력하세요." />
+                            </div> <!--//ipt-area -->
+                            <div class="page-desc-area bg-gray">
+                                <p>아래와 같은 조합으로 검색하세요</p>
+                                <ol>
+                                    <li><b>1.</b> -도로명 + 건물번호     <b>:   한강대로 416</b></li>
+                                    <li><b>2. -지역명(동/리)</b> + 번지 <b>:   남대문로5가 541</b></li>
+                                    <li><b>3.</b> -건물명, 아파트명      <b>:   반포자이아파트</b></li>
+                                </ol>
+                            </div> <!--//page-desc-area -->
+                        </div> <!--//modal-body -->
+                        <div class="modal-footer">
                             <div class="btn-area">
-                                <button type="button" class="btn blue">확인</button>
-                                <button type="button" class="btn light-gray" data-bs-dismiss="modal" aria-label="Close">취소</button>
+                                <button type="button" class="btn pink small" data-bs-dismiss="modal" aria-label="Close">닫기</button>
                             </div>
-                        </div> <!--//pop-comn -->
-                    </div> <!--//modal-dialog -->
-                </div> <!--//cart modal -->
-            </div> <!-- //장바구니 담기 -->
+                        </div>
+                    </div> <!--//modal-content -->
+                </div>
+            </div>
+            <!-- //주소찾기 -->
         </div> <!--//container -->
 
         <footer>

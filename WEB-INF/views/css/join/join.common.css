@@ -5,23 +5,6 @@ header{
     margin-bottom:0;
 }
 
-header .tit-area{
-    display:flex;
-    flex-flow:row;
-    align-items:center;
-    padding:10px 20px;
-    margin-bottom:10px;
-}
-header .tit-area .tit{
-    font-size:17px;
-    color:#242424;
-    text-align:center;
-    width:calc(100% - 30px);
-}
-header .tit-area.pink .tit{
-    color:#ff5550;
-}
-
 header.join .logo-area{
     padding:10px 0;
 }
@@ -62,24 +45,47 @@ header.join .logo-area .logo{
         align-items: center;
         justify-content: center;
         width:100%;
+        background:#eee;
     }
     .join-tab-comn ol li{
         width:calc(33.33% + 15px);
-        background-color:#fff;
+        background:url(../../images/join/bg-join-tab.png) no-repeat right center #fff;
         border:1px solid #e5e5e5;
         border-width:1px 0;
         text-align:center;
-        padding:27px;
+        padding:24px 0;
         margin-right:-15px;
         font-size:15px;
     }
     .join-tab-comn ol li.active{
-        background-color:rgb(92,82,208);
+        background:url(../../images/join/bg-join-tab-active.png) no-repeat right center rgb(92,82,208);
         color:#fff;
+        z-index:3 !important;
+    }
+    .join-tab-comn ol li:nth-child(1){
+        z-index:2;
+    }
+    .join-tab-comn ol li:nth-child(2){
         z-index:1;
+        position:relative;
+    }
+    .join-tab-comn ol li:nth-child(2).active:before{
+        content:'';
+        width:22px;
+        height:70px;
+        background:url(../../images/join/bg-join-tab-active-left.png) no-repeat left center rgb(92,82,208);
+        margin-left:-5px;
+        position:absolute;
+        left:0;
+        top:0;
     }
     .join-tab-comn ol li:last-child{
         margin-right:0;
+        background-image:none;
+    }
+    .join-tab-comn ol li:last-child.active{
+        background:url(../../images/join/bg-join-tab-active-left.png) no-repeat left center rgb(92,82,208);
+        margin-left:-5px;
     }
     
     .join-tab-comn.depth2{
@@ -197,41 +203,52 @@ header.join .logo-area .logo{
         display: inline-block;
     }
 
-.join-complete-area{
+.join-desc-area{
     border:1px solid #e5e5e5;
     padding:20px 12px 15px 12px;
     display:flex;
     flex-flow: column;
 }
-    .join-complete-area .desc-tit-img{
+    .join-desc-area .desc-tit-img.complete{
         border:2px solid #ff5550;
-        background-color:#eee;
+        background:url(../../images/join/img-join-complete.png) no-repeat center bottom #eee;
+        background-size:85%;
         width:120px;
         height:120px;
         border-radius:50%;
         margin:0 auto;
     }
-    .join-complete-area .desc-tit{
+    .join-desc-area .desc-tit{
         font-size:20px;
         font-weight:600;
         text-align:center;
         margin:24px 0 17px;
     }
-    .join-complete-area .desc-area{
+    .join-desc-area .desc-area{
         font-size:13px;
         word-break: keep-all;
         margin-bottom:0;
     }
-    .join-complete-area .desc-area b{
+    .join-desc-area .desc-area b{
         color:#ff5550;
         font-weight:normal;
     }
-    .join-complete-area .desc-area b.bold{
+    .join-desc-area .desc-area b.bold{
         font-size:15px;
         font-weight:600;
     }
 
 .page-desc-area{
-    margin-top:-15px;
-    padding-bottom:15px;
+    margin-top:28px;
+    padding-bottom:8px;
+}
+    .page-desc-area p{
+        padding:0;
+        margin:0;
+    }
+    .page-desc-area p b{
+        color:#ff5550;
+    }
+.page-desc-area.txt-right{
+    text-align:right;
 }

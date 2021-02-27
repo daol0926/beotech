@@ -31,6 +31,121 @@ body{
         bottom:10px;
     }
 
+.category-area{
+    padding:20px;
+    padding-top:16px;
+}
+    .category-area .tit-area{
+        padding:19px 0;
+    }
+    .category-area .tit-area .tit{
+        text-align:center;
+        font-size:19px;
+    }
+    .category-area .tit-area .tit b{
+        font-size:19px;
+        font-weight:600;
+    }
+
+.cate-tab{
+    padding-bottom:20px;
+}
+    .cate-tab .tab-tit-area .accordion-button{
+        background-color: transparent;
+        padding:0;
+        border:0;
+    }
+    .cate-tab .tab-tit-area .accordion-button::after{
+        width:12px;
+        height:7px;
+        background-size:contain;
+    }
+    .cate-tab .tab-tit-area{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        border-top:2px solid #000;
+        padding:11px 0;
+    }
+    .cate-tab .tab-tit-area .tit{
+        font-size:17px;
+    }
+    .cate-tab .pr-list-loop .price-area .ico.ico-cart{
+        border:0;
+    }
+    .cate-tab .btn-area{
+        border:1px solid #e5e5e5;
+        display:flex;
+        justify-items: center;
+        align-items: center;
+    }
+    .cate-tab .btn-area .ico.ico-more{
+        background-color:#fff;
+        padding:10px 0;
+        width:100%;
+        background-image:none;
+    }
+    .cate-tab .btn-area .ico.ico-more span{
+        font-size:13px;
+        padding-right:20px;
+        background:url(../../images/common/ico-arrow-more.png) no-repeat right center;
+        background-size:11px 11px;
+    }
+
+    .tab-list-area .active,
+    .cate-tab.drug .tab-tit-area,
+    .cate-tab.other .tab-tit-area{
+        border-color:#ef5864;
+    }
+    .cate-tab.drug .tab-tit-area .tit,
+    .cate-tab.other .tab-tit-area .tit{
+        color:#ef5864;
+    }
+    .tab-list-area .active,
+    .cate-tab.drug .tab-area .active,
+    .cate-tab.other .tab-area .active,
+    .cate-tab.drug .pr-list-loop .price-area .ico.ico-cart,
+    .cate-tab.other .pr-list-loop .price-area .ico.ico-cart{
+        background-color:#ef5864;
+    }
+    .cate-tab.drug .tab-tit-area .accordion-button::after,
+    .cate-tab.other .tab-tit-area .accordion-button::after{
+        background-image:url(../../images/main/ico-acorrdion-btn-pink.png);
+    }
+
+    .cate-tab.non-drug .tab-tit-area{
+        border-color:#69aa20;
+    }
+    .cate-tab.non-drug .tab-tit-area .tit{
+        color:#69aa20;
+    }
+    .cate-tab.non-drug .tab-area .active,
+    .cate-tab.non-drug .pr-list-loop .price-area .ico.ico-cart{
+        background-color:#69aa20;
+    }
+    .cate-tab.non-drug .tab-tit-area .accordion-button::after{
+        background-image:url(../../images/main/ico-acorrdion-btn-green.png);
+    }
+
+    .cate-tab.health .tab-tit-area{
+        border-color:#5868be;
+    }
+    .cate-tab.health .tab-tit-area .tit{
+        color:#5858be;
+    }
+    .cate-tab.health .tab-area .active,
+    .cate-tab.health .pr-list-loop .price-area .ico.ico-cart{
+        background-color:#5868be;
+    }
+    .cate-tab.health .tab-tit-area .accordion-button::after{
+        background-image:url(../../images/main/ico-acorrdion-btn-purple.png);
+    }
+
+    .cate-tab .pr-list-loop .price-area .ico.ico-cart{
+        background:url(../../images/common/ico-cart-white.png) no-repeat center;
+    }
+/* //cate-area */
+
 .pr-list-area{
 }
     .pr-list-loop{

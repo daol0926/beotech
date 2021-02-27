@@ -4,11 +4,13 @@
 *{
     font-family: 'Noto Sans KR', sans-serif;
     font-size:13px;
+    color:#1b1b1b;
 }
 
 body{
     background-color:#eee;
     padding-bottom:115px;
+    overflow-x:hidden;
 }
 
 dl,ol,ul{
@@ -55,23 +57,6 @@ header{
             .ui-area .srch-area .ico.ico-srch{
                 margin-right:6px;
             }
-            .ui-area .btn-area{
-                position:relative;
-            }
-            .ui-area .btn-area .cart-ea{
-                position:absolute;
-                top:-4px;
-                right:-8px;
-                background-color:#ff5550;
-                color:#fff;
-                border-radius:50%;
-                width:16px;
-                height:16px;
-                line-height:16px;
-                text-align:center;
-                display:inline-block;
-                font-size:10px;
-            }
 
         .srch-area{
             position:relative;
@@ -86,7 +71,36 @@ header{
                 top:6px;
                 right:0;
             }
+        
+        .ui-area .ico{
+            background-color:#fff;
+        }
     /* //header-area */
+
+header.type-txt .tit-area{
+    display:flex;
+    flex-flow:row;
+    align-items:center;
+    padding:10px 20px;
+    margin-bottom:10px;
+}
+header.type-txt .tit-area .tit{
+    font-size:17px;
+    color:#242424;
+    text-align:center;
+    width:calc(100% - 30px);
+}
+header.type-txt .tit-area.type-detail .tit{
+    font-size:15px;
+}
+header.type-txt .tit-area.pink .tit{
+    color:#ff5550;
+}
+header.type-txt.border-none,
+header.type-txt.border-none .tit-area{
+    margin-bottom:0;
+}
+
     .logo-area{
     }
         .logo{
@@ -151,6 +165,17 @@ header{
         width:24px;
         height:24px;
     }
+    .gnb ul li .ico.ico-srch{
+        background:#ef5864 url(../images/common/ico-srch-white.png) center no-repeat;
+        border-radius:50%;
+    }
+    .gnb ul li .ico.ico-cart{
+        background-image:url(../images/common/ico-bag.png);
+    }
+    .gnb ul li .bag-area .cart-ea{
+        top:0;
+        right:0;
+    }
     .gnb .srch-on-area{
         position:absolute;
         left:0;
@@ -189,6 +214,9 @@ header{
         position:unset;
         top:unset;
         right:unset;
+        background:url(../images/common/ico-srch.png) no-repeat transparent center;
+        width:24px;
+        height:24px;
     }
     .gnb .srch-on-area .srch-on-bg{
         position:fixed;
@@ -260,6 +288,10 @@ header{
         .lnb-menu-area .btn:focus{
             color:#000;
         }
+        .lnb-menu-area .bag-area .cart-ea{
+            top:0;
+            right:0;
+        }
         .lnb-menu-area .btn .ico{
             width:24px;
             height:24px;
@@ -281,6 +313,18 @@ header{
                 margin:0;
                 border:0;
                 background:transparent;
+            }
+            .lnb-list-loop .tit-area .tit .ico{
+                margin-right:8px;
+            }
+            .lnb-list-loop .tit-area .accordion-button::after{
+                background-image:url(../images/common/ico-arrow.png);
+                background-size:auto;
+                transform:rotate(90deg);
+                background-position:5px;
+            }
+            .lnb-list-loop .tit-area .accordion-button:not(.collapsed)::after{
+                transform:rotate(-90deg);
             }
             .lnb-list-loop .tit-sub-area dt{
                 padding:8px 16px;
@@ -305,10 +349,10 @@ header{
 
 /* icon */
 .ico{
-    background:no-repeat center;
-    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:auto;
     border:0;
-    background-color:#e5e5e5;/* 구분용으로 추후 삭제 */
 }
     .ico span{
         font-size:0;
@@ -316,37 +360,100 @@ header{
 
     .ico.ico-more{
         padding:0;
+        background-image:url(../images/common/ico-arrow-more.png);
     }
-    .ico.ico-more:before{
-        content:'더보기';
-        font-weight:300;
-        font-size:13px;
-        margin-right:5px;
+
+    .ico.ico-arrow{
+        background-image:url(../images/common/ico-arrow.png);
+        width:9px;
+        height:14px;
+    }
+
+    .ico.ico-arrow-prev{
+        background-image:url(../images/common/ico-arrow-prev.png);
+        margin:0;
+        width:15px;
+        height:14px;
+        background-color:#fff;
     }
 
     .ico.ico-srch{
         width:17px;
         height:17px;
-        background-image:url('');
+        background-image:url(../images/common/ico-srch.png);
     }
 
     .ico.ico-bag{
         width:19px;
         height:18px;
+        background-image:url(../images/common/ico-bag.png);
     }
 
-    .ico.ico-arrow-prev{
-        margin:0;
-        width:15px;
-        height:10px;
+    .ico.ico-question{
+        background-image:url(../images/common/ico-pop-question.png);
     }
+
+    .ico.ico-cart{
+        background-image:url(../images/common/ico-cart.png);
+    }
+
+    .ico.ico-myinfo{
+        background-image:url(../images/common/ico-gnb-myinfo.png);
+    }
+
+    .ico.ico-home{
+        background-image:url(../images/common/ico-gnb-home.png);
+    }
+
+    .ico.ico-menu{
+        background-image:url(../images/common/ico-gnb-menu.png);
+    }
+
+    .ico.ico-my-info{
+        background-image:url(../images/common/ico-gnb-srch.png);
+    }
+
+    .ico.ico-cscenter{
+        background-image:url(../images/common/ico-cscenter.png);
+    }
+
+    .ico.ico-etrade{
+        background-image:url(../images/common/ico-etrade.png);
+    }
+
+    .ico.ico-lnb-cate{
+        background-image:url(../images/common/ico-gnb-menu.png);
+        width:17px;
+        height:13px;
+    }
+    .ico.ico-lnb-best{
+        background-image:url(../images/common/ico-lnb-best.png);
+        width:17px;
+        height:22px;
+    }
+    .ico.ico-lnb-recommend{
+        background-image:url(../images/common/ico-lnb-recommend.png);
+        width:19px;
+        height:18px;
+    }
+    .ico.ico-lnb-recent{
+        background-image:url(../images/common/ico-lnb-recent.png);
+        width:18px;
+        height:18px;
+    }
+    .ico.ico-lnb-orderlist{
+        background-image:url(../images/common/ico-lnb-orderlist.png);
+        width:16px;
+        height:20px;
+    }
+    
 
 /* button */
 .btn{
     text-align:center;
     font-size:15px;
     color:#fff;
-    padding:13px 0;
+    padding:8px 0;
     border-radius:5px;
 }
 
@@ -360,6 +467,11 @@ header{
     /* button color */
     .btn.pink{
         background-color:#ff5550;
+    }
+    .btn.white-pink{
+        border:1px solid #ff5550;
+        color:#ff5550;
+        background-color:#fff;
     }
     .btn.white{
         border:1px solid #707070;
@@ -379,6 +491,13 @@ header{
         background-color:#efefef;
         color:#1b1b1b;
     }
+    .btn.gray{
+        background-color:#888;
+    }
+    .btn.dark-gray{
+        background-color:#434343;
+        color:#fff;
+    }
     .btn.txt{
         color:#000;
         padding:0;
@@ -389,6 +508,9 @@ header{
         font-size:10px;
         padding:6px 28px;
     }
+    .btn.tiny.tiny-mid{
+        padding:10px 28px;
+    }
     .btn.small{
         font-size:13px;
         padding:4px 28px;
@@ -397,17 +519,35 @@ header{
     }
     .btn.large{
     }
+
+    /* button outline */
+    .btn.square{
+        border-radius:0;
+    }
 /* //button */
 
 /* input */
 .ipt-comn{
     font-size:12px;
-    padding:13px 15px;
+    padding:10px 15px;
     border:1px solid #e5e5e5;
-    color:#959595;
 }
+    .ipt-comn::placeholder{
+        color:#959595;
+    }
+    .ipt-comn:read-only{
+        background:#e6e6e6;
+        color:#a0a0a0;
+    }
+    select.ipt-comn.ipt-num,
     input[type=number].ipt-comn{
         width:calc(33.33% - 10px);
+    }
+    input[type=number].ipt-comn{
+        text-align:center;
+    }
+    .ipt-comn.ipt-full{
+        width:100%;
     }
     .ipt-comn.ipt-srch{
         width:100%;
@@ -435,11 +575,52 @@ header{
         font-size:15px;
         margin-bottom:10px;
     }
+    .ipt-area .ipt-loop .ipt-tit.must{
+        display: flex;
+    }
+    .ipt-area .ipt-loop .ipt-tit.must::before{
+        content:'*';
+        display:inline-block;
+        font-size:25px;
+        color:#ff5550;
+        font-weight:600;
+        margin-top:-3px;
+        margin-right:5px;
+        height:15px;
+    }
     .ipt-area .ipt-loop .ipt-desc{
         display:flex;
         justify-content: space-between;
         align-items: center;
     }
+    .ipt-area .ipt-loop .ipt-column{
+        flex-flow:column;
+    }
+    .ipt-area .ipt-loop .ipt-depth2{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        width:100%;
+    }
+    .ipt-area .ipt-loop .ipt-depth2 .depth{
+        width:calc(50% - 1%);
+    }
+    .ipt-area .ipt-loop .ipt-comn{
+        margin-bottom:5px;
+        width:100%;
+    }
+
+    .ipt-area .ipt-loop select.ipt-comn.ipt-num,
+    .ipt-area .ipt-loop input[type=number].ipt-comn{
+        width:calc(33.33% - 10px);
+    }
+
+.ipt-area.type-border .ipt-loop{
+    border-top:1px solid #e5e5e5;
+}
+.ipt-area.type-border .btn-area{
+    margin-bottom:15px;
+}
 /* //ipt-area */
 
 .tbl-comn{
@@ -501,6 +682,15 @@ header{
     .btn-area.full .btn{
         width:100%;
     }
+    .btn-area.fixed{
+        position:fixed;
+        width:100%;
+        bottom:0;
+        padding:10px;
+        background:#fff;
+        border-top:10px solid #eee;
+    }
+
     .btn-area .btn-box{
         display:flex;
         flex-flow:column;
@@ -528,6 +718,25 @@ header{
         display:none;
     }
 /* //btn-area */
+
+.bag-area{
+    position:relative;
+}
+    .bag-area .cart-ea{
+        position:absolute;
+        top:-4px;
+        right:-8px;
+        background-color:#ff5550;
+        color:#fff;
+        border-radius:50%;
+        width:16px;
+        height:16px;
+        line-height:16px;
+        text-align:center;
+        display:inline-block;
+        font-size:10px;
+    }
+/* //bag-area */
 
 .product-area{
     padding:16px 0 10px;
@@ -617,6 +826,7 @@ header{
         height:24px;
         border:1px solid #e5e5e5;
         background-color:#fff;
+        background-size:auto;
     }
     .pr-list-loop .pr-soldout{
         position:absolute;
@@ -715,9 +925,10 @@ header{
     .main-pr-area.best .pr-list-loop .pr-rank{
         width:36px;
         height:40px;
-        background-color:#ff5550;
-        top:0;
-        left:0;
+        background:url(../images/common/bg-pr-rank.png) no-repeat center;
+        border-bottom:0;
+        top:4px;
+        left:5px;
     }
     .main-pr-area.best .pr-list-loop .pr-rank .num{
         color:#fff;
@@ -727,6 +938,7 @@ header{
         font-size:6px;
         display:block;
         margin:0 auto;
+        margin-top:-4px;
         font-weight:normal;
     }
 
@@ -735,95 +947,6 @@ header{
     }
 /* //main-pr-area */
 
-.category-area{
-    padding:20px;
-    padding-top:16px;
-}
-    .category-area .tit-area{
-        padding:19px 0;
-    }
-    .category-area .tit-area .tit{
-        text-align:center;
-        font-size:19px;
-    }
-    .category-area .tit-area .tit b{
-        font-size:19px;
-        font-weight:600;
-    }
-
-.cate-tab{
-    padding-bottom:20px;
-}
-    .cate-tab .tab-tit-area .accordion-button{
-        background-color: transparent;
-        padding:0;
-        border:0;
-    }
-    .cate-tab .tab-tit-area{
-        display:flex;
-        justify-content: space-between;
-        align-items: center;
-        border-top:2px solid #000;
-        padding:11px 0;
-    }
-    .cate-tab .tab-tit-area .tit{
-        font-size:17px;
-    }
-    .cate-tab .pr-list-loop .price-area .ico.ico-cart{
-        border:0;
-    }
-    .cate-tab .btn-area{
-        border:1px solid #e5e5e5;
-        display:flex;
-        justify-items: center;
-        align-items: center;
-    }
-    .cate-tab .btn-area .ico.ico-more{
-        background:#fff;
-        padding:4px 0;
-        width:100%;
-    }
-
-    .tab-list-area .active,
-    .cate-tab.drug .tab-tit-area,
-    .cate-tab.other .tab-tit-area{
-        border-color:#ef5864;
-    }
-    .cate-tab.drug .tab-tit-area .tit,
-    .cate-tab.other .tab-tit-area .tit{
-        color:#ef5864;
-    }
-    .tab-list-area .active,
-    .cate-tab.drug .tab-area .active,
-    .cate-tab.other .tab-area .active,
-    .cate-tab.drug .pr-list-loop .price-area .ico.ico-cart,
-    .cate-tab.other .pr-list-loop .price-area .ico.ico-cart{
-        background-color:#ef5864;
-    }
-
-    .cate-tab.non-drug .tab-tit-area{
-        border-color:#69aa20;
-    }
-    .cate-tab.non-drug .tab-tit-area .tit{
-        color:#69aa20;
-    }
-    .cate-tab.non-drug .tab-area .active,
-    .cate-tab.non-drug .pr-list-loop .price-area .ico.ico-cart{
-        background-color:#69aa20;
-    }
-
-    .cate-tab.health .tab-tit-area{
-        border-color:#5868be;
-    }
-    .cate-tab.health .tab-tit-area .tit{
-        color:#5858be;
-    }
-    .cate-tab.health .tab-area .active,
-    .cate-tab.health .pr-list-loop .price-area .ico.ico-cart{
-        background-color:#5868be;
-    }
-/* //cate-area */
-
 /* modal, popup */
 .pop-comn{
     /*width: 160px;
@@ -831,23 +954,46 @@ header{
     margin: 37.5px 10px 27.5px;
     padding: 17px 0 0;
     */
-    border-radius:10px;
     box-shadow:0 3px 5px 0 rgba(0, 0, 0, 0.2);
     background-color: #ffffff;
+    padding:10px;
+    box-sizing:border-box;
+    border:1px solid #e5e5e5;
+    border-radius:2px;
   }
-  .pop-comn .modal-body{
-      display: flex;
-      justify-content: center;
-      flex-flow:column;
-      padding:35px 1rem 40px;
-      align-items: center;
+  .pop-comn .modal-content{
+      border:0;
+  }
+  .pop-comn .modal-header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 0 10px 0;
+    border-bottom:2px solid #000;
+  }
+  .pop-comn .modal-header .tit-area{
+      margin-bottom:0;
+  }
+  .pop-comn .modal-header .tit-area .tit{
+      color:#1b1b1b;
+      font-size:19px;
+      font-weight:normal;
+  }
+  .pop-comn .modal-footer{
+      border-top:2px solid #000;
+  }
+  .pop-comn .ico-question-bg{
+      width:70px;
+      height:78px;
+      background:url(../images/common/bg-pop-question.png) no-repeat 15px bottom;
+      margin-bottom:20px;
   }
   .pop-comn .ico.ico-question{
+      display:block;
       width:70px;
       height:70px;
       background-color:#2196f3;
       border-radius:10px;
-      margin-bottom:20px;
   }
   .pop-comn .desc-area{
       font-size:17px;
@@ -856,20 +1002,61 @@ header{
       margin:0;
       padding:0;
   }
+  .pop-comn .page-desc-area{
+      margin-top:10px;
+      padding:10px 15px;
+      background-color:#f7f7f7;
+      border:1px solid #e5e5e5;
+  }
   .pop-comn .btn-area{
       display: flex;
       justify-content: space-around;
+      width:100%;
   }
-  .pop-comn .btn-area .btn{
-      border-radius:0;
-      width:50%;
-  }
-  .pop-comn .btn-area .btn:first-child{
-      border-radius:0 0 0 10px;
-  }
-  .pop-comn .btn-area .btn:last-child{
-      border-radius:0 0 10px 0;
-  }
+
+.pop-comn.pop-find-address{
+    min-height:528px;
+}
+    .pop-comn.pop-find-address .ipt-comn{
+        border-color:#5a5a5a;
+        padding:8px 15px;
+    }
+    .pop-comn.pop-find-address .ipt-comn::placeholder{
+        color:#e5e5e5;
+    }
+    .pop-comn.pop-find-address .page-desc-area ol{
+        margin-top:25px;
+        margin-left:25px;
+    }
+    .pop-comn.pop-find-address .modal-body{
+        padding-bottom:40px;
+    }
+    .pop-comn.pop-find-address .modal-footer{
+        padding-top:210px;
+    }
+
+.pop-comn.pop-cart{
+    border-radius:10px;
+    padding:0;
+    border:0;
+}
+    .pop-comn.pop-cart .modal-body{
+        display: flex;
+        justify-content: center;
+        flex-flow:column;
+        padding:35px 1rem 40px;
+        align-items: center;
+    }
+    .pop-comn.pop-cart .btn-area .btn{
+        border-radius:0;
+        width:50%;
+    }
+    .pop-comn.pop-cart .btn-area .btn:first-child{
+        border-radius:0 0 0 10px;
+    }
+    .pop-comn.pop-cart .btn-area .btn:last-child{
+        border-radius:0 0 10px 0;
+    }
 /* //pop-comn */
 
 footer{
@@ -886,6 +1073,7 @@ footer{
     /* //cscenter-area */
 
     .num-area{
+        background:url(../images/common/ico-tel.png) no-repeat left center;
         padding-left:62px;
         margin:0 auto;
     }
