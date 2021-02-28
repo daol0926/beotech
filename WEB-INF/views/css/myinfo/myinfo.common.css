@@ -1,0 +1,197 @@
+@charset "UTF-8";
+.container{
+    padding:0;
+}
+.gnb-myinfo{
+    padding:12px 25px;
+}
+    .gnb-myinfo ul{
+        display:flex;
+        justify-content: space-between;
+    }
+    .gnb-myinfo ul li{
+        width:20%;
+        word-break:keep-all;
+        text-align:center;
+        display:flex;
+        flex-flow:column;
+        justify-content: center;
+    }
+    .gnb-myinfo .ico{
+        padding-top:30px;
+        background-position-y:top;
+        background-color:transparent;
+    }
+    .gnb-myinfo .gnb-txt{
+        display:flex;
+        font-size:10px;
+        min-height:30px;
+        align-items: center;
+        justify-content: center;
+    }
+    .gnb-myinfo .ico.ico-easy-payment{
+        background-position-y: 3px;
+    }
+    .gnb-myinfo ul li.active .ico.ico-pw-change,
+    .gnb-myinfo ul li:hover .ico.ico-pw-change{
+        background-image:url(../../images/common/ico-pw-change-on.png);
+    }
+    .gnb-myinfo ul li.active .ico.ico-member-out,
+    .gnb-myinfo ul li:hover .ico.ico-member-out{
+        background-image:url(../../images/common/ico-member-out-on.png);
+    }
+    .gnb-myinfo ul li.active .ico.ico-easy-payment,
+    .gnb-myinfo ul li:hover .ico.ico-easy-payment{
+        background-image:url(../../images/common/ico-easy-payment-on.png);
+    }
+    .gnb-myinfo ul li.active .ico.ico-order-list,
+    .gnb-myinfo ul li:hover .ico.ico-order-list{
+        background-image:url(../../images/common/ico-order-list-on.png);
+    }
+    .gnb-myinfo ul li.active .ico.ico-myinfo2,
+    .gnb-myinfo ul li:hover .ico.ico-myinfo2{
+        background-image:url(../../images/common/ico-myinfo-on.png);
+    }
+    .gnb-myinfo ul li.active .gnb-txt,
+    .gnb-myinfo ul li:hover .gnb-txt{
+        color:#ff5550;
+    }
+/* //gnb-myinfo */
+
+.order-area .srch-area{
+    padding:20px;
+    margin:0 auto;
+}
+.order-area .srch-area div{
+    margin-bottom:5px;
+}
+.order-area .srch-area .date-pick-area,
+.order-area .srch-area .period-area{
+    display:flex;
+    justify-content: space-between;
+}
+.order-area .srch-area .period-area .btn{
+    width:24%;
+}
+.order-area .srch-area .btn-area{
+    margin-top:10px;
+}
+
+.order-info-tit{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+    .order-info-tit *{
+        font-size:15px;
+    }
+    .order-info-tit .order-status{
+        display:flex;
+        flex-flow:column;
+    }
+    .order-info-tit .order-status b{
+        font-weight:normal;
+        font-size:13px;
+    }
+    .order-info-tit .order-status b::before{
+        content:'['
+    }
+    .order-info-tit .order-status b::after{
+        content:']'
+    }
+
+.order-list-area .pr-info-area{
+    display:flex;
+    margin-top:15px;
+}
+    .order-list-area .pr-info-area .img-area{
+        width:100px;
+        height:86px;
+        border:1px solid #e5e5e5;
+    }
+    .order-list-area .pr-info-area .txt-area{
+        width:100%;
+    }
+    .order-list-area .pr-info-area .txt-area .tit{
+        font-size:15px;
+        margin-bottom:25px;
+    }
+    .order-list-area .pr-info-area .txt-area .pr-ea-chk-li{
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .order-list-area .pr-info-area .txt-area .ea-chk-price{
+        font-size:19px;
+    }
+
+.order-li-loop{
+    padding:13px 20px;
+    border-top:1px solid #e5e5e5;
+}
+
+.tbl-comn{
+    border-top:1px solid #e5e5e5;
+    padding:10px 20px;
+    margin-bottom:0;
+}
+.tbl-comn.bd-none{
+    border-top:0;
+}
+.tbl-comn tbody th{
+    width:110px;
+}
+.tbl-comn td{
+    padding:5px;
+}
+.tbl-comn td .ipt-comn{
+    width:100%;
+    height:30px;
+}
+
+.btn-area.normal{
+    padding-bottom:10px;
+}
+
+.myinfo-desc-area{
+    font-size:15px;
+    color:#434343;
+    text-align:center;
+    white-space:pre-line;
+}
+
+.myinfo-desc-area b{
+    font-size:15px;
+}
+
+.order-area.etrade .srch-area{
+    padding:10px 25px;
+}
+
+.member-out-area{
+    display:flex;
+    flex-flow:column;
+    justify-content: center;
+    align-items: center;
+    padding-left:20px;
+    padding-right:20px;
+    word-break:keep-all;
+}
+    .member-out-area .myinfo-desc-area{
+        margin-top:28px;
+    }
+    .member-out-area .ipt-area{
+        margin:10px 0;
+    }
+    .member-out-area .ipt-area .ipt-comn,
+    .member-out-area .btn-area .btn{
+        width:180px;
+        min-width:180px;
+    }
+    .member-out-area .ipt-area .ipt-comn{
+        height:30px;
+    }
+    .member-out-area .btn-area.normal.typeB{
+        margin-top:35px;
+        margin-bottom:30px;
+    }

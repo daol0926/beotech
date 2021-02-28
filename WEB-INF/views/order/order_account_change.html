@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>주문/결제</title>
+
+        <!-- common css -->
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" />
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="../css/common.css">
+        <link rel="stylesheet" type="text/css" href="../css/order/order.common.css">
+        <link rel="stylesheet" type="text/css" href="../css/popup.common.css">
+
+        <!-- media css -->
+        <link rel="stylesheet" type="text/css" href="../css/media/media.common.css" />
+    </head>
+    <body>
+        <header class="type-txt">
+            <div class="tit-area">
+                <button type="button" class="ico ico-arrow-prev"><span>돌아가기</span></button>
+                <h1 class="tit">주문/결제</h1>
+            </div>
+        </header>
+
+        <div class="container order-detail-area">
+            <div class="tbl-comn">
+                <table>
+                    <caption>상품 정보</caption>
+                    <colgroup>
+                        <col style="width:95px;" />
+                        <col style="width:auto;" />
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th scope="row">상품명</th>
+                            <td>까스활명수큐액 75ML(50)-1 외 3건</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div> <!--//tbl-comn -->
+            <div class="tbl-comn">
+                <table>
+                    <caption>구매자 정보</caption>
+                    <colgroup>
+                        <col style="width:95px;" />
+                        <col style="width:auto;" />
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th scope="row">이름</th>
+                            <td>[더편한정신건강의학과의원] 권기태</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div> <!--//tbl-comn -->
+            <div class="tbl-comn">
+                <table>
+                    <caption>배송정보</caption>
+                    <colgroup>
+                        <col style="width:95px;" />
+                        <col style="width:auto;" />
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th scope="row">납품처명</th>
+                            <td>(1506598)권기태</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">전화번호</th>
+                            <td>051-711-7751</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">휴대폰번호</th>
+                            <td>01093122450</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">주소</th>
+                            <td>47012<br />부산 사상구 가야대로 272, 10층 (주례동)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div> <!--//tbl-comn -->
+            <div class="tbl-comn">
+                <table>
+                    <caption>결제 정보</caption>
+                    <colgroup>
+                        <col style="width:95px;" />
+                        <col style="width:auto;" />
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th scope="row">총 결제금액</th>
+                            <td class="total-amount-txt"><b class="c-pink">30,281,900</b>원</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">결제방식</th>
+                            <td>
+                                <div class="ipt-area li-row">
+                                    <div class="li-loop">
+                                        <input type="radio" checked /><span class="ipt-chk-txt">간편결제</span>
+                                    </div>
+                                    <div class="li-loop">
+                                        <input type="radio" /><span class="ipt-chk-txt">일반결제</span>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">간편결제</th>
+                            <td>
+                                <select class="ipt-comn">
+                                    <option>등록 된 간편결제가 없습니다.</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">할부선택</th>
+                            <td>
+                                <select class="ipt-comn">
+                                    <option>124개월</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">최종결제금액</th>
+                            <td><input type="text" class="ipt-comn" placeholder="로그인 비밀번호 입력"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div> <!--//tbl-comn -->
+            <div class="btn-area full fixed">
+                <button type="button" class="btn square pink">바로 결제하기</button>
+            </div>
+        </div> <!--//order-detail-area -->
+
+        <!-- 납품처변경 팝업 -->
+        <div class="pop-comn" style="position:absolute;top:200px;width:calc(100% - 40px);left:20px;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="tit-area">
+                        <h1 class="tit">납품처변경</h1>
+                    </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">&times;</button>
+                </div> <!--//modal-header -->
+                <div class="modal-body">
+                    <div class="address-info-area">
+                        <dl>
+                            <dt class="tit">(1506598)더편한정신건강의학과의원</dt>
+                            <dd class="address">(47012)부산 사상구 가야대로 272, 10층(주례동)</dd>
+                            <dd class="tel">051-711-7751</dd>
+                        </dl>
+                    </div> <!--//address-info-area -->
+                </div> <!--//modal-body -->
+                <div class="modal-footer">
+                    <div class="btn-area">
+                        <button type="button" class="btn pink small">인쇄</button>
+                    </div>
+                </div>
+            </div> <!--//modal-content -->
+        </div>
+        <!--//납품처변경 팝업 -->
+
+        <!-- script -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script src="../js/common.js"></script>
+    
+    </body>
+</html>

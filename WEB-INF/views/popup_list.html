@@ -57,6 +57,36 @@
         <div class="container" style="padding:20px;">
             <button type="button" data-bs-toggle="modal" data-bs-target="#cartModal"><span>장바구니 담기</span></button>
             <button type="button" data-bs-toggle="modal" data-bs-target="#findAddress"><span>주소찾기</span></button>
+            <button type="button" data-bs-toggle="modal" data-bs-target="#accountChange"><span>납품처변경</span></button></button>
+
+            <!-- 납품처변경 팝업 -->
+            <div class="modal fade" id="accountChange" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog pop-comn">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <div class="tit-area">
+                                <h1 class="tit">납품처변경</h1>
+                            </div>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">&times;</button>
+                        </div> <!--//modal-header -->
+                        <div class="modal-body">
+                            <div class="address-info-area">
+                                <dl>
+                                    <dt class="tit">(1506598)더편한정신건강의학과의원</dt>
+                                    <dd class="address">(47012)부산 사상구 가야대로 272, 10층(주례동)</dd>
+                                    <dd class="tel">051-711-7751</dd>
+                                </dl>
+                            </div> <!--//address-info-area -->
+                        </div> <!--//modal-body -->
+                        <div class="modal-footer">
+                            <div class="btn-area">
+                                <button type="button" class="btn pink small">인쇄</button>
+                            </div>
+                        </div>
+                    </div> <!--//modal-content -->
+                </div>
+            </div>
+            <!--//납품처변경 팝업 -->
 
             <!-- 장바구니 추가 -->
             <div class="modal fade" id="cartModal" tabindex="-1" aria-hidden="true">

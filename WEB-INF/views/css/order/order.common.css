@@ -1,0 +1,106 @@
+@charset "UTF-8";
+body{
+    background:#fff;
+}
+body.ft-border{
+    background:#eee;
+}
+header.type-txt{
+    box-shadow: 0 0 2.4px 0.1px rgba(0, 0, 0, 0.15);
+    margin:3px;
+}
+.container{
+    padding:0;
+}
+.order-detail-area{
+    padding-top:30px;
+    margin-top:-9px;
+}
+.order-detail-area .tbl-comn{
+    padding:0 20px;
+}
+.order-detail-area .tbl-comn *{
+    font-size:13px;
+}
+.order-detail-area .tbl-comn .btn.small{
+    margin-left:10px;
+    padding:2px 10px;
+}
+
+.order-detail-area .tbl-comn table caption{
+    caption-side: top;
+    font-size:15px;
+    color:#1b1b1b;
+    padding-bottom:12px;
+}
+
+.order-detail-area .tbl-comn table tbody th,
+.order-detail-area .tbl-comn table tbody td{
+    border-top:1px solid #5a5a5e;
+}
+
+.order-detail-area .tbl-comn .td-pr-img{
+    width:90px;
+    height:90px;
+    border:1px solid #959595;
+    margin-right:9px;
+    padding:10px;
+}
+.order-detail-area .tbl-comn .pr-info{
+    display:flex;
+}
+.order-detail-area .tbl-comn th{
+    width:90px;
+}
+.order-detail-area .tbl-comn .ipt-comn{
+    height:26px;
+    padding:0 5px;
+    min-width:190px;
+    border:1px solid #a0a0a0;
+}
+.order-detail-area .tbl-comn select.ipt-comn{
+    background-color:#fff;
+    min-width:auto;
+    color:#1b1b1b;
+}
+.order-detail-area .tbl-comn .ipt-area.li-row{
+    display:flex;
+    align-items: center;
+    padding-left:10px;
+}
+.order-detail-area .tbl-comn .ipt-area.li-row .li-loop{
+    display:flex;
+    align-items: center;
+    width:calc(50% - 10px);
+}
+.order-detail-area .tbl-comn .total-amount-txt,
+.order-detail-area .tbl-comn .total-amount-txt *{
+    font-size:15px;
+}
+.order-detail-area .tbl-comn .total-amount-txt b{
+    margin-right:5px;
+}
+.order-total-amount{
+    padding-bottom:25px;
+    text-align:center;
+}
+.order-total-amount *{
+    font-size:15px;
+    font-weight:600;
+}
+.order-total-amount b{
+    font-size:17px;
+}
+
+.btn-area.bg-gray{
+    padding:10px 0;
+    background:#eee;
+}
+
+.btn-area.fixed{
+    left:1%;
+    bottom:0.5%;
+    width:98%;
+    border-top:0;
+    box-shadow: 0 0 2.4px 0.1px rgba(0, 0, 0, 0.15);
+}

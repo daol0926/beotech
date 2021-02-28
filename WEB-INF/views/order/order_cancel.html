@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>주문/결제</title>
+
+        <!-- common css -->
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" />
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="../css/common.css">
+        <link rel="stylesheet" type="text/css" href="../css/order/order.common.css">
+
+        <!-- media css -->
+        <link rel="stylesheet" type="text/css" href="../css/media/media.common.css" />
+    </head>
+    <body class="ft-border">
+        <header class="type-txt">
+            <div class="tit-area">
+                <button type="button" class="ico ico-arrow-prev"><span>돌아가기</span></button>
+                <h1 class="tit">주문/결제</h1>
+            </div>
+        </header>
+
+        <div class="container order-detail-area">
+            <div class="tbl-comn">
+                <table>
+                    <colgroup>
+                        <col style="width:95px;" />
+                        <col style="width:auto;" />
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th scope="row">주문일자</th>
+                            <td>2021-02-05</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">주문번호</th>
+                            <td>2021020500023</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">주문상태</th>
+                            <td><span class="c-pink">주문취소</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div> <!--//tbl-comn -->
+            <div class="tbl-comn">
+                <table>
+                    <caption>구매내역</caption>
+                    <colgroup>
+                        <col style="width:95px;" />
+                        <col style="width:auto;" />
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th scope="row">품목명</th>
+                            <td>
+                                <div class="pr-info">
+                                    <img src="../images/main/product-sample04.png" class="td-pr-img" />
+                                    <span class="td-pr-name">네버세이굿바이 리어 퍼포먼스 샴푸 300ml (10개)</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">주문수량</th>
+                            <td>7</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">할증수량</th>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">금액</th>
+                            <td>1,925,000원</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div> <!--//tbl-comn -->
+            <div class="tbl-comn">
+                <table>
+                    <caption>배송지 정보</caption>
+                    <colgroup>
+                        <col style="width:95px;" />
+                        <col style="width:auto;" />
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th scope="row">납품처명</th>
+                            <td>권기태</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">전화번호</th>
+                            <td>051-711-7751</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">주소</th>
+                            <td>47012<br />부산 사상구 가야대로 272, 10층 (주례동)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div> <!--//tbl-comn -->
+            <div class="tbl-comn">
+                <table>
+                    <caption>결제 정보</caption>
+                    <colgroup>
+                        <col style="width:95px;" />
+                        <col style="width:auto;" />
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th scope="row">결제수단</th>
+                            <td>신용카드</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">내역</th>
+                            <td>OK:00258085 / 일시불
+                                <button type="button" class="btn small white-darkgray">전표출력</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">승인번호</th>
+                            <td>00258085</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">승인일자</th>
+                            <td>2021-02-05</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">최종결제금액</th>
+                            <td>1,925,000원</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div> <!--//tbl-comn -->
+            <div class="order-total-amount">총 결제금액 <b class="c-pink">1,925,000</b>원</div>
+        </div> <!--//order-detail-area -->
+
+        <footer>
+            <div class="cscenter-area">
+                <div class="num-area">
+                    <span class="num">080-023-1897</span>
+                    <span class="num-desc">평일 - 09:00~18:00  토,일 , 공휴일 - 휴뮤</span>
+                </div>
+            </div> <!--//cscenter-area -->
+            <div class="use-guide-area">
+                <dl>
+                    <dd><button class="btn txt small">개인정보 취급방침</button></dd>
+                    <dd><button class="btn txt small">이용약관</button></dd>
+                </dl>
+            </div> <!--//use-guide-area -->
+            <div class="company-area">
+                <div class="company-info-area">
+                    <dl>
+                        <dt>동화약품(주)</dt>
+                        <dd>주소 : 04522 서울특별시 중구 남대문로9길 24 패스트파이브 타워 6~8층</dd>
+                        <dd>전화번호 : 080-023-1897</dd>
+                        <dd>통신판매번호 : 2004-서울중구-02098</dd>
+                        <dd>건강기능식품번호 : 제2009-0433240호</dd>
+                        <dd>사업자 등록번호 : [211-87-04515]</dd>
+                        <dd><button class="btn white small">사업자정보확인</button></dd>
+                    </dl>
+                </div> <!--//company-info-area -->
+                <div class="copyright">COPYRIGHT(C) DONG WHA PHARM. CO., LTD. ALL RIGHTS RESERVED.</div> <!--//copyright -->
+            </div> <!--//company-area -->
+        </footer>
+
+        <!-- script -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script src="../js/common.js"></script>
+    
+    </body>
+</html>

@@ -1,0 +1,119 @@
+@charset "UTF-8";
+header.type-txt,
+header.type-txt .tit-area{
+    margin-bottom:1px;
+}
+.container{
+    padding:0;
+}
+.gnb-commu{
+    padding:0;
+}
+    .gnb-commu ul{
+        display:flex;
+        justify-content: space-between;
+    }
+    .gnb-commu ul li{
+        width:50%;
+        text-align:center;
+        display:flex;
+        flex-flow:column;
+        justify-content: center;
+        border-bottom:2px solid #fff;
+    }
+    .gnb-commu .ico{
+        padding-top:36px;
+        background-position-y:10px;
+        background-color:transparent;
+    }
+    .gnb-commu .gnb-txt{
+        display:flex;
+        font-size:10px;
+        min-height:30px;
+        align-items: center;
+        justify-content: center;
+    }
+    .gnb-commu ul li.active,
+    .gnb-commu ul li:hover{
+        border-bottom:2px solid #ff5550;
+    }
+/* //gnb-commu */
+
+.desc-area{
+    padding:16px 20px 5px 20px;
+    background:#eee;
+}
+.desc-area .desc-txt{
+    margin-bottom:25px;
+}
+.desc-area .desc-txt:last-child{
+    margin-bottom:0;
+}
+
+.tbl-comn{
+    padding:10px;
+    margin-bottom:0;
+}
+    .tbl-comn *{
+        font-size:10px;
+        color:#434343;
+    }
+    .tbl-comn thead{
+        background-color:#eee;
+    }
+    .tbl-comn th,
+    .tbl-comn td{
+        border:0;
+        padding:7px 0;
+        text-align:center;
+        font-weight:normal;
+    }
+    .tbl-comn td{
+        border-bottom:1px solid #a0a0a0;
+    }
+    .tbl-comn .head-tit{
+        text-align:left;
+        padding-left:10px;
+    }
+    .tbl-comn .subject{
+        text-align:left;
+        padding:15px 10px;
+    }
+    .tbl-comn .subject .tit{
+        display:block;
+        font-size:13px;
+        overflow:hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        margin-bottom:10px;
+        max-width:150px;
+    }
+    .tbl-comn .status::after{
+        content:'';
+        display: block;
+    }
+    .tbl-comn .status.reply-ing::after{
+        color:#ff5550;
+        content:'[접수중]'
+    }
+    .tbl-comn .status.reply-complete::after{
+        color:#5a5a5e;
+        content:'[답변완료]';
+    }
+
+.tbl-view-area{
+    border-top:10px solid #eee;
+}
+.tbl-view-area .btn-area.normal{
+    background-color:#eee;
+    padding-top:10px;
+}
+.tbl-view-area .btn-area.full{
+    background:#fff;
+    padding:10px;
+    margin-top:-10px;
+}
+.tbl-write-area{
+    border-top:10px solid #eee;
+    padding:50px 20px 10px 20px;
+}

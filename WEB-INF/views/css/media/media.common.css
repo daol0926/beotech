@@ -17,10 +17,14 @@
         width:calc(33.33% - 10px);
         margin-right:10px;
     }
+    .tbl-comn .subject .tit{
+        max-width:480px;
+    }
 }
 @media (min-width: 1024px){
     .pr-list-loop{
         width:150px;
         margin-right:10px;
+        max-width:800px;
     }
 }

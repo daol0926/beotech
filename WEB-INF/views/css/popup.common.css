@@ -24,6 +24,16 @@
     padding:0 0 10px 0;
     border-bottom:2px solid #000;
   }
+  .pop-comn .modal-header .btn-close{
+      font-size:30px;
+      font-weight:lighter;
+      background-image:none;
+      color:#1b1b1b;
+      opacity:1;
+      padding:0;
+      margin:0;
+      line-height:1;
+  }
   .pop-comn .modal-header .tit-area{
       margin-bottom:0;
   }
@@ -82,7 +92,9 @@
         margin-left:25px;
     }
     .pop-comn.pop-find-address .modal-body{
-        padding-bottom:40px;
+        padding:20px 0 40px 0;
+        border:2px solid #000;
+        border-width:2px 0;
     }
     .pop-comn.pop-find-address .modal-footer{
         padding-top:210px;
@@ -110,6 +122,52 @@
     .pop-comn.pop-cart .btn-area .btn:last-child{
         border-radius:0 0 10px 0;
     }
+    .pop-comn .modal-header{
+        border-bottom:0;
+    }
+    .pop-comn .modal-body{
+        padding:0;
+    }
+    .pop-comn .modal-footer{
+        border-top:0;
+    }
+
+.address-info-area{
+    border-top:2px solid #000;
+    border-bottom:1px solid #a0a0a0;
+    padding:25px 0;
+    margin-bottom:160px;
+}
+.address-info-area .tit{
+    font-size:15px;
+    font-weight:normal;
+    margin-bottom:12px;
+}
+.address-info-area dd{
+    margin-bottom:9px;
+    font-size:10px;
+}
+.address-info-area dd:before{
+    content:'';
+    border:1px solid #229de8;
+    color:#229de8;
+    font-size:10px;
+    padding:0 5px;
+    display:inline-block;
+    width:50px;
+    height:17px;
+    text-align:center;
+    margin-right:4px;
+}
+.address-info-area .address:before{
+    content:'주소';
+}
+.address-info-area .tel:before{
+    content:'전화번호';
+}
+.address-info-area dd *{
+    font-size:10px;
+}
 
 .pop-radius-comn{
     position:absolute;
