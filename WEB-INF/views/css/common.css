@@ -176,17 +176,7 @@ header.type-txt.border-none .tit-area{
         top:0;
         right:0;
     }
-    .gnb .srch-on-area{
-        position:absolute;
-        left:0;
-        bottom:0;
-        width:100%;
-        border-radius:20px 20px 0 0;
-        height:250px;
-        padding:25px 20px;
-        box-sizing:border-box;
-        background-color:#fff;
-    }
+
     .gnb .srch-on-area .srch-area{
         display:flex;
         justify-content:space-between;
@@ -217,16 +207,6 @@ header.type-txt.border-none .tit-area{
         background:url(../images/common/ico-srch.png) no-repeat transparent center;
         width:24px;
         height:24px;
-    }
-    .gnb .srch-on-area .srch-on-bg{
-        position:fixed;
-        background-color:#000;
-        opacity:.5;
-        width:100%;
-        height:100%;
-        top:0;
-        left:0;
-        z-index:-1;
     }
 
     .lnb{
@@ -563,6 +543,17 @@ header.type-txt.border-none .tit-area{
     }
 /* //input */
 
+/* font color */
+.c-blue{
+    color:#229de8;
+}
+.c-green{
+    color:#2cb872;
+}
+.c-pink{
+    color:#ff5550;
+}
+
 .ipt-area{
 }
     .ipt-area .ipt-loop{
@@ -679,6 +670,9 @@ header.type-txt.border-none .tit-area{
     .btn-area.normal .btn:first-child{
         margin-left:0;
     }
+    .btn-area.normal .btn.square{
+        border-radius:0;
+    }
     .btn-area.full .btn{
         width:100%;
     }
@@ -689,6 +683,11 @@ header.type-txt.border-none .tit-area{
         padding:10px;
         background:#fff;
         border-top:10px solid #eee;
+    }
+    .btn-area.border{
+        border:1px solid #e5e5e5 !important;
+        border-width:1px 0 0 0 !important;
+        padding-top:10px;
     }
 
     .btn-area .btn-box{
@@ -947,117 +946,23 @@ header.type-txt.border-none .tit-area{
     }
 /* //main-pr-area */
 
-/* modal, popup */
-.pop-comn{
-    /*width: 160px;
-    height: 130px;
-    margin: 37.5px 10px 27.5px;
-    padding: 17px 0 0;
-    */
-    box-shadow:0 3px 5px 0 rgba(0, 0, 0, 0.2);
-    background-color: #ffffff;
-    padding:10px;
-    box-sizing:border-box;
-    border:1px solid #e5e5e5;
-    border-radius:2px;
-  }
-  .pop-comn .modal-content{
-      border:0;
-  }
-  .pop-comn .modal-header{
+.price-area .ipt-area{
     display:flex;
     justify-content: space-between;
     align-items: center;
-    padding:0 0 10px 0;
-    border-bottom:2px solid #000;
-  }
-  .pop-comn .modal-header .tit-area{
-      margin-bottom:0;
-  }
-  .pop-comn .modal-header .tit-area .tit{
-      color:#1b1b1b;
-      font-size:19px;
-      font-weight:normal;
-  }
-  .pop-comn .modal-footer{
-      border-top:2px solid #000;
-  }
-  .pop-comn .ico-question-bg{
-      width:70px;
-      height:78px;
-      background:url(../images/common/bg-pop-question.png) no-repeat 15px bottom;
-      margin-bottom:20px;
-  }
-  .pop-comn .ico.ico-question{
-      display:block;
-      width:70px;
-      height:70px;
-      background-color:#2196f3;
-      border-radius:10px;
-  }
-  .pop-comn .desc-area{
-      font-size:17px;
-      color:#1b1b1b;
-      text-align:center;
-      margin:0;
-      padding:0;
-  }
-  .pop-comn .page-desc-area{
-      margin-top:10px;
-      padding:10px 15px;
-      background-color:#f7f7f7;
-      border:1px solid #e5e5e5;
-  }
-  .pop-comn .btn-area{
-      display: flex;
-      justify-content: space-around;
-      width:100%;
-  }
-
-.pop-comn.pop-find-address{
-    min-height:528px;
 }
-    .pop-comn.pop-find-address .ipt-comn{
-        border-color:#5a5a5a;
-        padding:8px 15px;
+    .price-area .ipt-area .btn,
+    .price-area .ipt-area .ipt-comn{
+        width:30px;
+        height:30px;
+        line-height:15px;
+        padding:0;
+        text-align:center;
     }
-    .pop-comn.pop-find-address .ipt-comn::placeholder{
-        color:#e5e5e5;
+    .price-area .ipt-area input[type=num].ipt-comn{
+        margin:0 -1px;
     }
-    .pop-comn.pop-find-address .page-desc-area ol{
-        margin-top:25px;
-        margin-left:25px;
-    }
-    .pop-comn.pop-find-address .modal-body{
-        padding-bottom:40px;
-    }
-    .pop-comn.pop-find-address .modal-footer{
-        padding-top:210px;
-    }
-
-.pop-comn.pop-cart{
-    border-radius:10px;
-    padding:0;
-    border:0;
-}
-    .pop-comn.pop-cart .modal-body{
-        display: flex;
-        justify-content: center;
-        flex-flow:column;
-        padding:35px 1rem 40px;
-        align-items: center;
-    }
-    .pop-comn.pop-cart .btn-area .btn{
-        border-radius:0;
-        width:50%;
-    }
-    .pop-comn.pop-cart .btn-area .btn:first-child{
-        border-radius:0 0 0 10px;
-    }
-    .pop-comn.pop-cart .btn-area .btn:last-child{
-        border-radius:0 0 10px 0;
-    }
-/* //pop-comn */
+/* //price-area */
 
 footer{
     margin-top:10px;
