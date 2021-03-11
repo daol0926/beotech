@@ -45,6 +45,8 @@
     .detail-area .tit-desc-area .tit{
         margin-bottom:10px;
         font-weight:normal;
+        display: flex;
+        align-items: center;
     }
     .detail-area .tit-desc-area b{
         color:#434343;

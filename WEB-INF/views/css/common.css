@@ -382,6 +382,14 @@ header.type-txt.border-none .tit-area{
         background-image:url(../images/common/ico-pop-question.png);
     }
 
+    .ico.ico-question-min{
+        background-image:url(../images/common/ico-question-min.png);
+        background-color:transparent;
+        width:14px;
+        height:14px;
+        margin-left:5px;
+    }
+
     .ico.ico-cart{
         background-image:url(../images/common/ico-cart.png);
     }
