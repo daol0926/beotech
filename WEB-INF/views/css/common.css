@@ -458,6 +458,16 @@ header.type-txt.border-none .tit-area{
     .ico.ico-myinfo2{
         background-image:url(../images/common/ico-myinfo.png);
     }
+    .ico.ico-apple{
+        background-image:url(../images/common/ico-apple.png);
+        width:30px;
+        height:34px;
+    }
+    .ico.ico-android{
+        background-image:url(../images/common/ico-android.png);
+        width:29px;
+        height:33px;
+    }
     
 
 /* button */
@@ -546,6 +556,10 @@ header.type-txt.border-none .tit-area{
         padding:13px 0;
     }
     .btn.large{
+        font-size:24px;
+        height:60px;
+        line-height:60px;
+        padding:0 28px;
     }
 
     /* button outline */
