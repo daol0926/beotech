@@ -5,34 +5,6 @@
     .btn-area.normal .btn{
         min-width:auto;
     }
-
-    .app-download .app-download-desc-area,
-    .app-download .app-download-desc-area *{
-        font-size:26px;
-    }
-    .app-download .app-download-desc-area{
-        min-height:355px;
-    }
-    .app-download .btn-area .btn.large{
-        padding:0 14px;
-        letter-spacing: -0.5px;
-    }
-}
-@media (max-width: 375px){
-    .app-download .btn-area .btn.large{
-        font-size:20px;
-    }
-    .app-download .app-download-area{
-        margin-bottom:36px;
-    }
-}
-@media (max-width: 767px){
-    .app-download{
-        padding:30px 0 45px 0;
-    }
-    .app-download header{
-        padding:0 30px;
-    }
 }
 @media (min-width: 768px){
     header, .container, footer, .gnb, .bn-area{

@@ -1,4 +1,52 @@
 @charset "UTF-8";
+.logo-area{
+}
+    .logo{
+        width:122px;
+        height:30px;
+        background:url(../../images/common/logo.png) no-repeat center;
+        font-size:0;
+        background-size:contain;
+    }
+/* //logo-area */
+
+.btn{
+    text-align:center;
+    font-size:15px;
+    color:#fff;
+    padding:8px 0;
+    border-radius:5px;
+}
+
+    .btn:hover,
+    .btn:active,
+    .btn:focus{
+        color:#fff;
+        box-shadow: none;
+    }
+    .btn.pink{
+        text-align:center;
+        background-color:#ff5550;
+    }
+    .btn.large{
+        font-size:24px;
+        height:60px;
+        line-height:60px;
+        padding:0 28px;
+    }
+/* //btn */
+
+.ico.ico-apple{
+    background-image:url(../../images/common/ico-apple.png);
+    width:30px;
+    height:34px;
+}
+.ico.ico-android{
+    background-image:url(../../images/common/ico-android.png);
+    width:29px;
+    height:33px;
+}
+/* //ico */
 
 .app-download{
     background:#fff;
@@ -58,6 +106,31 @@
         margin-right:10px;
     }
 
+.cscenter-area{
+    border-bottom:10px solid #eee;
+    padding:17px 0;
+    display:flex;
+    justify-content:center;
+}
+/* //cscenter-area */
+
+    .num-area .num{
+        display:block;
+        font-family:'Lato';
+        font-size:25px;
+        font-weight:bolder;
+        line-height:1.14;
+        letter-spacing:1px;
+        color:#0d0d0d;
+        margin-bottom:0;
+    }
+
+    .num-area .num-desc{
+        font-size:10px;
+        color:#313131;
+    }
+/* //num-area */
+
 .app-download .cscenter-area{
     border:0;
     padding:0;
@@ -78,3 +151,36 @@
         font-size:16px;
         color:#737b83;
     }
+
+
+/* media query */
+@media (max-width:360px){
+
+    .app-download .app-download-desc-area,
+    .app-download .app-download-desc-area *{
+        font-size:26px;
+    }
+    .app-download .app-download-desc-area{
+        min-height:355px;
+    }
+    .app-download .btn-area .btn.large{
+        padding:0 14px;
+        letter-spacing: -0.5px;
+    }
+}
+@media (max-width: 375px){
+    .app-download .btn-area .btn.large{
+        font-size:20px;
+    }
+    .app-download .app-download-area{
+        margin-bottom:36px;
+    }
+}
+@media (max-width: 767px){
+    .app-download{
+        padding:30px 0 45px 0;
+    }
+    .app-download header{
+        padding:0 30px;
+    }
+}
