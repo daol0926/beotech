@@ -1,6 +1,17 @@
 @charset "UTF-8";
 
 /* media query */
+@media (max-width:320px){
+    .mb-min-br{
+        display:block;
+    }
+}
+@media (min-width:321px){
+    .mb-min-br2{
+        display:block;
+    }
+}
+
 @media (max-width:360px){
     .btn-area.normal .btn{
         min-width:auto;
