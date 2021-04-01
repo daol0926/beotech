@@ -6,6 +6,7 @@
         min-width:auto;
     }
 }
+
 @media (min-width: 768px){
     header, .container, footer, .gnb, .bn-area{
         max-width:none;
@@ -21,10 +22,17 @@
         max-width:480px;
     }
 }
+
 @media (min-width: 1024px){
     .pr-list-loop{
         width:150px;
         margin-right:10px;
         max-width:800px;
+    }
+}
+
+@media (max-width: 1200px){
+    .pc-wrap.type-wide-new{
+        overflow-x:scroll;
     }
 }
