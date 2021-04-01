@@ -235,6 +235,88 @@
 }
 /* //pc login wide(02안) */
 
+/* pc login wide new */
+.pc-wrap.type-wide.type-wide-new{
+    background-color:#fff;
+}
+.pc-wrap.type-wide-new .container{
+    max-width:100%;
+}
+.pc-wrap.type-wide-new .login-wrap .header-area,
+.pc-wrap.type-wide-new .login-wrap .login-area{
+    height:595px;
+    padding-top:114px;
+}
+.pc-wrap.type-wide-new .login-wrap .header-area .header-box,
+.pc-wrap.type-wide-new .login-wrap .login-area .login-box{
+    width:354px;
+}
+.pc-wrap.type-wide-new .login-wrap .header-area{
+    position:relative;
+    background:none;
+}
+.pc-wrap.type-wide-new .login-wrap .header-area .header-box{
+    position:absolute;
+    right:135px;
+    background:url(../../images/join/img-login-since.png) no-repeat center 70px;
+}
+.pc-wrap.type-wide-new .login-wrap .login-area{
+    padding-left:135px;
+}
+.pc-wrap .login-wrap .login-area .btn-area .desc-btn-box{
+    margin-top:50px;
+}
+.pc-wrap.type-wide-new footer{
+    border-top:2px solid #f3f3f3;
+    max-width:100%;
+    margin-top:0;
+}
+.pc-wrap.type-wide-new footer .footer-box{
+    display:flex;
+    justify-content: space-between;
+    max-width:970px;
+    margin:0 auto;
+}
+.pc-wrap.type-wide-new footer .footer-box .use-guide-area dl{
+    justify-content: flex-start;
+}
+.pc-wrap.type-wide-new footer .footer-box .use-guide-area dl dd{
+    width:auto;
+    padding:0;
+    margin-right:30px;
+    color:#444;
+}
+.pc-wrap.type-wide-new footer .footer-box .company-area{
+    padding-left:0;
+    text-align:left;
+}
+.pc-wrap.type-wide-new footer .footer-box .company-area dl dt,
+.pc-wrap.type-wide-new footer .footer-box .company-area dl dd{
+    padding-left:0;
+    color:#444;
+}
+.pc-wrap.type-wide-new footer .footer-box .cscenter-area{
+    border-bottom:0;
+    padding-top:45px;
+    text-align:right;
+}
+.pc-wrap.type-wide-new footer .footer-box .cscenter-area .num-area{
+    background:none;
+    padding-left:0;
+}
+.pc-wrap.type-wide-new footer .footer-box .cscenter-area .num-area .num-tit{
+    display: inline-block;
+    margin-bottom:20px;
+    color:#444;
+    font-size:12px;
+}
+.pc-wrap.type-wide-new footer .footer-box .cscenter-area .num-area .num{
+    font-family: 'Roboto';
+    color:#444;
+    font-weight:normal;
+}
+/* //pc login wide new */
+
 
 .pc-wrap footer{
     background-color: transparent;
